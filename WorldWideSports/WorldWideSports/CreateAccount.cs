@@ -85,8 +85,8 @@ namespace WorldWideSports
             }
 
             //validate the password strength
-            string error = ""; // this will be set by the IsStrongPassword method if the password is not strong
-            if (!IsStrongPassword(password, error))
+            string error; //holds the error string
+            if (!IsStrongPassword(password, out error))
             {
                 // if the password is not strong, show the error message and clear the password fields
                 MessageBox.Show(error);
@@ -123,8 +123,11 @@ namespace WorldWideSports
         }
 
         //validate the password
-        private bool IsStrongPassword(string password, string error)
+        private bool IsStrongPassword(string password, out string error)
         {
+            //error is empty to have a place holder
+            error = "";
+
             // A strong password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one number, and one special character
             bool hasUpper = false;
             bool hasLower = false;
