@@ -65,6 +65,10 @@ namespace WorldWideSports
 
                     //open the main form
                     MainForm mainForm = new MainForm();
+
+                    //this will show the group boxes to save the favorite teams and players only when the user logs in successfully
+                    mainForm.ShowGroupBoxes();
+
                     mainForm.Show();
 
                     //hide the login form

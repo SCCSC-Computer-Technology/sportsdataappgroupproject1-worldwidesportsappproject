@@ -16,5 +16,22 @@ namespace WorldWideSports
         {
             InitializeComponent();
         }
+
+        private void btnLoginCreate_Click(object sender, EventArgs e)
+        {
+            //this takes the user to the login form where they can either log in or create an account
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+        }
+
+
+
+
+
+        public void ShowGroupBoxes()  // add this method
+        {
+            gbxNfl.Visible = true;
+            gbxPga.Visible = true;
+        }
     }
 }
