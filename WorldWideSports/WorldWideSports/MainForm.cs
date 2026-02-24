@@ -23,15 +23,31 @@ namespace WorldWideSports
             LoginForm loginForm = new LoginForm();
             loginForm.Show();
         }
-
-
-
-
-
-        public void ShowGroupBoxes()  // add this method
+        public void ShowGroupBoxes()
         {
+            //show the group boxes to save the favorite teams and players only when the user logs in successfully
             gbxNfl.Visible = true;
             gbxPga.Visible = true;
+        }
+
+        private void btnSaveFavTeam_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSavePga_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnViewNfl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnViewPga_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

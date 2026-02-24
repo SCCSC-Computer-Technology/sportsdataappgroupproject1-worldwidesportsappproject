@@ -113,17 +113,19 @@
             this.btnSavePga.TabIndex = 3;
             this.btnSavePga.Text = "Save Favorite Player";
             this.btnSavePga.UseVisualStyleBackColor = true;
+            this.btnSavePga.Click += new System.EventHandler(this.btnSavePga_Click);
             // 
             // btnViewPga
             // 
             this.btnViewPga.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnViewPga.Font = new System.Drawing.Font("Britannic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewPga.Location = new System.Drawing.Point(135, 190);
+            this.btnViewPga.Location = new System.Drawing.Point(130, 190);
             this.btnViewPga.Name = "btnViewPga";
-            this.btnViewPga.Size = new System.Drawing.Size(120, 36);
+            this.btnViewPga.Size = new System.Drawing.Size(141, 36);
             this.btnViewPga.TabIndex = 2;
-            this.btnViewPga.Text = "View Details";
+            this.btnViewPga.Text = "View PGA Details";
             this.btnViewPga.UseVisualStyleBackColor = true;
+            this.btnViewPga.Click += new System.EventHandler(this.btnViewPga_Click);
             // 
             // cbxPga
             // 
@@ -154,12 +156,13 @@
             // 
             this.btnViewNfl.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnViewNfl.Font = new System.Drawing.Font("Britannic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewNfl.Location = new System.Drawing.Point(135, 190);
+            this.btnViewNfl.Location = new System.Drawing.Point(128, 190);
             this.btnViewNfl.Name = "btnViewNfl";
-            this.btnViewNfl.Size = new System.Drawing.Size(120, 36);
+            this.btnViewNfl.Size = new System.Drawing.Size(136, 36);
             this.btnViewNfl.TabIndex = 2;
-            this.btnViewNfl.Text = "View Details";
+            this.btnViewNfl.Text = "View NFL Details";
             this.btnViewNfl.UseVisualStyleBackColor = true;
+            this.btnViewNfl.Click += new System.EventHandler(this.btnViewNfl_Click);
             // 
             // btnSaveFavTeam
             // 
@@ -171,6 +174,7 @@
             this.btnSaveFavTeam.TabIndex = 1;
             this.btnSaveFavTeam.Text = "Save Favorite Team";
             this.btnSaveFavTeam.UseVisualStyleBackColor = true;
+            this.btnSaveFavTeam.Click += new System.EventHandler(this.btnSaveFavTeam_Click);
             // 
             // cbxNflTeams
             // 
@@ -203,7 +207,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MainForm";
+            this.Text = "World Wide Sports";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gbxHolder1.ResumeLayout(false);
             this.gbxPga.ResumeLayout(false);
