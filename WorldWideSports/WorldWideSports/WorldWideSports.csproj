@@ -66,6 +66,20 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="NFLDetailedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NFLDetailedForm.Designer.cs">
+      <DependentUpon>NFLDetailedForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PGADetailedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PGADetailedForm.Designer.cs">
+      <DependentUpon>PGADetailedForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PGAPlayerStats.cs" />
+    <Compile Include="PGATournament.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WorldWideSportsDBDataSet.Designer.cs">
@@ -78,6 +92,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NFLDetailedForm.resx">
+      <DependentUpon>NFLDetailedForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PGADetailedForm.resx">
+      <DependentUpon>PGADetailedForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
