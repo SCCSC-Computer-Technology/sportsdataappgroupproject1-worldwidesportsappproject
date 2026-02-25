@@ -121,7 +121,7 @@
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAACDQAAANICAYAAAAysy2JAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAA/7JJREFUeF7s3QeUXNWd7/sWwe/Z747vnXvvOI7T2GPPjGfGEiKYaEy0AdsEy4Bt
+        DAAACwwBP0AiyAAA/7JJREFUeF7s3QeUXNWd7/sWwe/Z747vnXvvOI7T2GPPjGfGEiKYaEy0AdsEy4Bt
         oo1ACBEFiNzCRCGBCEI551bOUit2UKvVakktdc4555xrv7UPFD5n71N1qruruyt8P2v9lpebs1tS1a5T
         /6qdIiIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -2644,10 +2644,13 @@
         AAAAAAAAAAAAAAAAAMAx5v8HBisV0QOOlhYAAAAASUVORK5CYII=
 </value>
   </data>
+  <metadata name="toolTipMainForm.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>574, 28</value>
+  </metadata>
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAACDQAAANICAYAAAAysy2JAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAA/7JJREFUeF7s/X9sm/d97/1bTZO0S7q2S9f1h7ulrbe4XZo6iZIoiWxfGIwb+cM3
+        vAAADrwBlbxySQAA/7JJREFUeF7s/X9sm/d97/1bTZO0S7q2S9f1h7ulrbe4XZo6iZIoiWxfGIwb+cM3
         YAw24D98A8YXxuA/VMBfHGG3BvgPAbpPdc7RvWlfa6nmKYkaK4kMKo7iyLXsygkTK7E6K40a6zTcOewZ
         23EnOgvXcDO3ECf8g1+8L4XOxffnw+u6SJEUL/L5AF5A6/CiJF4fXnzz+vzasgUAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -4748,4 +4751,16 @@
         AAAAoM38/wHPxa8uaBv8vwAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="worldWideSportsDBDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>21, 22</value>
+  </metadata>
+  <metadata name="pgA_PlayersTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>324, 27</value>
+  </metadata>
+  <metadata name="nfL_PLAYER_STATSTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>756, 25</value>
+  </metadata>
+  <metadata name="toolTipMainForm.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>574, 28</value>
+  </metadata>
 </root>

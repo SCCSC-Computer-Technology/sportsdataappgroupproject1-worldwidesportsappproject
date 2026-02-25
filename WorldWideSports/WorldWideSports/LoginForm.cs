@@ -64,11 +64,15 @@ namespace WorldWideSports
                     MessageBox.Show("Login successful!");
 
                     //open the main form
-                    MainForm mainForm = new MainForm();
+                    MainForm mainForm = (MainForm)this.Owner;
+
+                    //pass the username to the main form label
+                    mainForm.SetAccount(usernameTxtBox.Text.Trim());
 
                     //this will show the group boxes to save the favorite teams and players only when the user logs in successfully
                     mainForm.ShowGroupBoxes();
 
+                    //shows the main form
                     mainForm.Show();
 
                     //hide the login form
@@ -89,10 +93,13 @@ namespace WorldWideSports
 
         private void exitBtn_Click(object sender, EventArgs e)
         {
-            //display a message box to the user
-            MessageBox.Show("Exiting the World Wide Sports. Goodbye!");
+            //get the main form
+            MainForm mainForm = (MainForm)this.Owner;
 
-            //close the application
+            //close the application and return to the main form
+            mainForm.Show();
+
+            //hide the login form
             this.Close();
         }
 

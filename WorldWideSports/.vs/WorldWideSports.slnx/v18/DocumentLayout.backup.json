@@ -13,6 +13,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{ECEF9588-1440-43A9-9AB5-821B8C92AF84}|WorldWideSports\\WorldWideSports.csproj|C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\sportsdataappgroupproject1-worldwidesportsappproject\\WorldWideSports\\worldwidesports\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ECEF9588-1440-43A9-9AB5-821B8C92AF84}|WorldWideSports\\WorldWideSports.csproj|solutionrelative:worldwidesports\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECEF9588-1440-43A9-9AB5-821B8C92AF84}|WorldWideSports\\WorldWideSports.csproj|C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\sportsdataappgroupproject1-worldwidesportsappproject\\WorldWideSports\\worldwidesports\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ECEF9588-1440-43A9-9AB5-821B8C92AF84}|WorldWideSports\\WorldWideSports.csproj|solutionrelative:worldwidesports\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +26,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
@@ -42,27 +54,38 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginForm.cs",
-              "DocumentMoniker": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\sportsdataappgroupproject1-worldwidesportsappproject\\WorldWideSports\\WorldWideSports\\LoginForm.cs",
-              "RelativeDocumentMoniker": "WorldWideSports\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\sportsdataappgroupproject1-worldwidesportsappproject\\WorldWideSports\\WorldWideSports\\LoginForm.cs",
-              "RelativeToolTip": "WorldWideSports\\LoginForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-24T01:47:27.5Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\sportsdataappgroupproject1-worldwidesportsappproject\\WorldWideSports\\WorldWideSports\\MainForm.cs",
               "RelativeDocumentMoniker": "WorldWideSports\\MainForm.cs",
               "ToolTip": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\sportsdataappgroupproject1-worldwidesportsappproject\\WorldWideSports\\WorldWideSports\\MainForm.cs",
               "RelativeToolTip": "WorldWideSports\\MainForm.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAiwBYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAIgAAACMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-24T01:24:11.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\sportsdataappgroupproject1-worldwidesportsappproject\\WorldWideSports\\WorldWideSports\\LoginForm.cs",
+              "RelativeDocumentMoniker": "WorldWideSports\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\sportsdataappgroupproject1-worldwidesportsappproject\\WorldWideSports\\WorldWideSports\\LoginForm.cs [Design]",
+              "RelativeToolTip": "WorldWideSports\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T15:22:32.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\sportsdataappgroupproject1-worldwidesportsappproject\\WorldWideSports\\WorldWideSports\\LoginForm.cs",
+              "RelativeDocumentMoniker": "WorldWideSports\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\pcgen\\OneDrive\\Documents\\GitHub\\sportsdataappgroupproject1-worldwidesportsappproject\\WorldWideSports\\WorldWideSports\\LoginForm.cs",
+              "RelativeToolTip": "WorldWideSports\\LoginForm.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T01:47:27.5Z"
             }
           ]
         }
