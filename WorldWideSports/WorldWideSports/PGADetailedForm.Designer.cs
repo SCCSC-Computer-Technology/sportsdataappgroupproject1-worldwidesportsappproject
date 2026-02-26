@@ -30,11 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             this.grpBoxStats = new System.Windows.Forms.GroupBox();
+            this.rchTxtBoxTournament = new System.Windows.Forms.RichTextBox();
             this.rchTxtBoxStats = new System.Windows.Forms.RichTextBox();
             this.cmbBoxPlayers = new System.Windows.Forms.ComboBox();
             this.btnSelectPlayer = new System.Windows.Forms.Button();
             this.lblPGATitle = new System.Windows.Forms.Label();
-            this.rchTxtBoxTournament = new System.Windows.Forms.RichTextBox();
             this.pGA_ALL_TOURNAMENTSBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.worldWideSportsDBDataSet = new WorldWideSports.WorldWideSportsDBDataSet();
             this.pGA_PLAYER_STATSBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -56,10 +56,18 @@
             this.grpBoxStats.Controls.Add(this.rchTxtBoxStats);
             this.grpBoxStats.Location = new System.Drawing.Point(12, 70);
             this.grpBoxStats.Name = "grpBoxStats";
-            this.grpBoxStats.Size = new System.Drawing.Size(1091, 516);
+            this.grpBoxStats.Size = new System.Drawing.Size(1091, 580);
             this.grpBoxStats.TabIndex = 0;
             this.grpBoxStats.TabStop = false;
             this.grpBoxStats.Text = "Stats";
+            // 
+            // rchTxtBoxTournament
+            // 
+            this.rchTxtBoxTournament.Location = new System.Drawing.Point(463, 21);
+            this.rchTxtBoxTournament.Name = "rchTxtBoxTournament";
+            this.rchTxtBoxTournament.Size = new System.Drawing.Size(622, 551);
+            this.rchTxtBoxTournament.TabIndex = 2;
+            this.rchTxtBoxTournament.Text = "";
             // 
             // rchTxtBoxStats
             // 
@@ -67,7 +75,7 @@
             this.rchTxtBoxStats.Location = new System.Drawing.Point(6, 21);
             this.rchTxtBoxStats.Name = "rchTxtBoxStats";
             this.rchTxtBoxStats.ReadOnly = true;
-            this.rchTxtBoxStats.Size = new System.Drawing.Size(439, 489);
+            this.rchTxtBoxStats.Size = new System.Drawing.Size(439, 551);
             this.rchTxtBoxStats.TabIndex = 0;
             this.rchTxtBoxStats.Text = "";
             // 
@@ -99,14 +107,6 @@
             this.lblPGATitle.Size = new System.Drawing.Size(80, 16);
             this.lblPGATitle.TabIndex = 4;
             this.lblPGATitle.Text = "PGA Details";
-            // 
-            // rchTxtBoxTournament
-            // 
-            this.rchTxtBoxTournament.Location = new System.Drawing.Point(463, 21);
-            this.rchTxtBoxTournament.Name = "rchTxtBoxTournament";
-            this.rchTxtBoxTournament.Size = new System.Drawing.Size(622, 489);
-            this.rchTxtBoxTournament.TabIndex = 2;
-            this.rchTxtBoxTournament.Text = "";
             // 
             // pGA_ALL_TOURNAMENTSBindingSource
             // 
