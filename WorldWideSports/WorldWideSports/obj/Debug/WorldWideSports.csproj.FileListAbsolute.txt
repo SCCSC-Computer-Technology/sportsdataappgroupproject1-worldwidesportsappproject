@@ -9,3 +9,16 @@ C:\Users\masly\source\repos\WorldWideSports\WorldWideSports\obj\Debug\WorldWideS
 C:\Users\masly\source\repos\WorldWideSports\WorldWideSports\obj\Debug\WorldWideSports.pdb
 C:\Users\masly\source\repos\WorldWideSports\WorldWideSports\obj\Debug\WorldWideSports.LoginForm.resources
 C:\Users\masly\source\repos\WorldWideSports\WorldWideSports\obj\Debug\WorldWideSports.CreateAccount.resources
+C:\Users\jdort\OneDrive\Documents\GitHub\sportsdataappgroupproject1-worldwidesportsappproject\WorldWideSports\WorldWideSports\bin\Debug\WorldWideSports.exe.config
+C:\Users\jdort\OneDrive\Documents\GitHub\sportsdataappgroupproject1-worldwidesportsappproject\WorldWideSports\WorldWideSports\bin\Debug\WorldWideSports.exe
+C:\Users\jdort\OneDrive\Documents\GitHub\sportsdataappgroupproject1-worldwidesportsappproject\WorldWideSports\WorldWideSports\bin\Debug\WorldWideSports.pdb
+C:\Users\jdort\OneDrive\Documents\GitHub\sportsdataappgroupproject1-worldwidesportsappproject\WorldWideSports\WorldWideSports\obj\Debug\WorldWideSports.csproj.AssemblyReference.cache
+C:\Users\jdort\OneDrive\Documents\GitHub\sportsdataappgroupproject1-worldwidesportsappproject\WorldWideSports\WorldWideSports\obj\Debug\WorldWideSports.CreateAccount.resources
+C:\Users\jdort\OneDrive\Documents\GitHub\sportsdataappgroupproject1-worldwidesportsappproject\WorldWideSports\WorldWideSports\obj\Debug\WorldWideSports.LoginForm.resources
+C:\Users\jdort\OneDrive\Documents\GitHub\sportsdataappgroupproject1-worldwidesportsappproject\WorldWideSports\WorldWideSports\obj\Debug\WorldWideSports.Properties.Resources.resources
+C:\Users\jdort\OneDrive\Documents\GitHub\sportsdataappgroupproject1-worldwidesportsappproject\WorldWideSports\WorldWideSports\obj\Debug\WorldWideSports.csproj.GenerateResource.cache
+C:\Users\jdort\OneDrive\Documents\GitHub\sportsdataappgroupproject1-worldwidesportsappproject\WorldWideSports\WorldWideSports\obj\Debug\WorldWideSports.csproj.CoreCompileInputs.cache
+C:\Users\jdort\OneDrive\Documents\GitHub\sportsdataappgroupproject1-worldwidesportsappproject\WorldWideSports\WorldWideSports\obj\Debug\WorldWideSports.exe
+C:\Users\jdort\OneDrive\Documents\GitHub\sportsdataappgroupproject1-worldwidesportsappproject\WorldWideSports\WorldWideSports\obj\Debug\WorldWideSports.pdb
+C:\Users\jdort\OneDrive\Documents\GitHub\sportsdataappgroupproject1-worldwidesportsappproject\WorldWideSports\WorldWideSports\obj\Debug\WorldWideSports.NFLDetailedForm.resources
+C:\Users\jdort\OneDrive\Documents\GitHub\sportsdataappgroupproject1-worldwidesportsappproject\WorldWideSports\WorldWideSports\obj\Debug\WorldWideSports.PGADetailedForm.resources
