@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WorldWideSports
+{
+    public partial class NFLDetailedForm : Form
+    {
+        public NFLDetailedForm()
+        {
+            InitializeComponent();
+        }
+    }
+}
