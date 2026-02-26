@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WorldWideSports.WorldWideSportsDBDataSetTableAdapters;
 
 namespace WorldWideSports
 {
@@ -17,17 +18,20 @@ namespace WorldWideSports
             InitializeComponent();
         }
 
+        //this is the userid that will be used to link the favorite teams and players to the user account, it will be set when the user logs in successfully
+        public int CurrentUserId { get; set; }
+
         private void btnLoginCreate_Click(object sender, EventArgs e)
         {
             if (btnLoginCreate.Text == "Logout")
             {
                 //this will log the user out by hiding the group boxes and resetting the account label and changing the button text back to login
-                gbxNfl.Visible = false;
-                gbxPga.Visible = false;
+                NoShowGbxAndBtn();
                 lblAccount.Text = "";
                 lblAccount.Visible = false;
                 btnLoginCreate.Text = "Login/Create Account";
                 MessageBox.Show("You have been logged out.");
+                //return the form to the login state and exit the method so it doesn't open the login form again
                 return;
             }
             //this takes the user to the login form where they can either log in or create an account
@@ -38,21 +42,108 @@ namespace WorldWideSports
             //this will hide the main form while the login form is open
             this.Hide();
         }
-        public void ShowGroupBoxes()
+        public void ShowGbxAndBtn()
         {
             //show the group boxes to save the favorite teams and players only when the user logs in successfully
             gbxNfl.Visible = true;
             gbxPga.Visible = true;
+            btnViewNfl.Visible = true;
+            btnViewPga.Visible = true;
+        }
+        public void NoShowGbxAndBtn()
+        {
+            //wpll not show the group boxes to save the favorite teams and players only when the user logs in successfully
+            gbxNfl.Visible = false;
+            gbxPga.Visible = false; ;
+            btnViewNfl.Visible = false;
+            btnViewPga.Visible = false;
         }
 
         private void btnSaveFavTeam_Click(object sender, EventArgs e)
         {
+            //this will get the users team selection and turn it into a string to be saved
+            string selectedTeamName = cbxNflTeams.SelectedItem.ToString();
 
+            //convert the full nfl team name back to the abbreviation using the dictionary
+            string teamAbbr = nflTeamNames.FirstOrDefault(x => x.Value == selectedTeamName).Key;
+
+            //this will check if the team abbreviation is null or empty
+            if (string.IsNullOrEmpty(teamAbbr))
+            {
+                MessageBox.Show("Please select a valid team.");
+                return;
+            }
+
+            try
+            {
+
+                //check if the user already has a saved favorite team
+                this.favoriteNFLTeamsTableAdapter.Fill(this.worldWideSportsDBDataSet.FavoriteNFLTeams);
+
+                //checks the existing row for the userid and gets the team abbreviation if it exists
+                var existingRow = this.worldWideSportsDBDataSet.FavoriteNFLTeams.FirstOrDefault(r => r.UserId == CurrentUserId);
+
+                if (existingRow != null)
+                {
+                    //user already has a favorite team so update it
+                    existingRow.TeamAbbr = teamAbbr;
+                    favoriteNFLTeamsTableAdapter.Update(existingRow);
+                    MessageBox.Show("Favorite team updated!");
+                }
+                else
+                {
+                    //user has no favorite team yet so insert a new row
+                    favoriteNFLTeamsTableAdapter.Insert(CurrentUserId, teamAbbr);
+                    MessageBox.Show("Favorite team saved!");
+
+                }
+            }
+            catch (Exception ex)
+            {
+                //display a message box to the user
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnSavePga_Click(object sender, EventArgs e)
         {
+            //this will get the users team selection and turn it into a string to be saved
+            string selectedPlayer = cbxPga.Text;
 
+            //checking if the selected player is null or empty
+            if (string.IsNullOrEmpty(selectedPlayer))
+            {
+                MessageBox.Show("Please select a valid player.");
+                return;
+            }
+
+            try
+            {
+                // check if the user already has a saved favorite player
+                this.favoritePGAPlayersTableAdapter.Fill(this.worldWideSportsDBDataSet.FavoritePGAPlayers);
+
+                var existingRow = this.worldWideSportsDBDataSet.FavoritePGAPlayers
+                    .FirstOrDefault(r => r.UserId == CurrentUserId);
+
+                if (existingRow != null)
+                {
+                    // user already has a favorite player so update it
+                    existingRow.PlayerName = selectedPlayer;
+                    favoritePGAPlayersTableAdapter.Update(existingRow);
+                    MessageBox.Show("Favorite player updated!");
+                }
+                else
+                {
+                    // user has no favorite player yet so insert a new row
+                    favoritePGAPlayersTableAdapter.Insert(CurrentUserId, selectedPlayer);
+                    MessageBox.Show("Favorite player saved!");
+                }
+            }
+            catch (Exception ex)
+            {
+                //display a message box to the user
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnViewNfl_Click(object sender, EventArgs e)
@@ -132,12 +223,14 @@ namespace WorldWideSports
             {"WAS", "Washington Commanders"}
         };
 
-        public void SetAccount(string username)
+        public void SetAccount(string username, int userId)
         {
             //this will get the username from the login form and display it on the main form, and change the login button to a logout button
             lblAccount.Text = "Account: " + username;
             lblAccount.Visible = true;
             btnLoginCreate.Text = "Logout";
+            //contrusting the CurrentUserId property with the userId that is passed in from the login form
+            CurrentUserId = userId;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
