@@ -49,7 +49,6 @@
             this.favoriteNFLTeamsTableAdapter = new WorldWideSports.WorldWideSportsDBDataSetTableAdapters.FavoriteNFLTeamsTableAdapter();
             this.tableAdapterManager = new WorldWideSports.WorldWideSportsDBDataSetTableAdapters.TableAdapterManager();
             this.usersTableAdapter = new WorldWideSports.WorldWideSportsDBDataSetTableAdapters.UsersTableAdapter();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
@@ -63,12 +62,11 @@
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1400, 652);
             this.panel1.TabIndex = 0;
@@ -87,7 +85,7 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(447, 294);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(506, 331);
             this.panel2.TabIndex = 2;
@@ -97,7 +95,7 @@
             this.createAccountBtn.Font = new System.Drawing.Font("Segoe UI", 10.86792F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.createAccountBtn.ForeColor = System.Drawing.Color.Black;
             this.createAccountBtn.Location = new System.Drawing.Point(160, 272);
-            this.createAccountBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.createAccountBtn.Margin = new System.Windows.Forms.Padding(4);
             this.createAccountBtn.Name = "createAccountBtn";
             this.createAccountBtn.Size = new System.Drawing.Size(185, 42);
             this.createAccountBtn.TabIndex = 8;
@@ -124,7 +122,7 @@
             this.exitBtn.Font = new System.Drawing.Font("Segoe UI", 10.86792F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitBtn.ForeColor = System.Drawing.Color.Black;
             this.exitBtn.Location = new System.Drawing.Point(317, 162);
-            this.exitBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.exitBtn.Margin = new System.Windows.Forms.Padding(4);
             this.exitBtn.Name = "exitBtn";
             this.exitBtn.Size = new System.Drawing.Size(131, 42);
             this.exitBtn.TabIndex = 6;
@@ -138,7 +136,7 @@
             this.loginBtn.Font = new System.Drawing.Font("Segoe UI", 10.86792F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginBtn.ForeColor = System.Drawing.Color.Black;
             this.loginBtn.Location = new System.Drawing.Point(61, 162);
-            this.loginBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.loginBtn.Margin = new System.Windows.Forms.Padding(4);
             this.loginBtn.Name = "loginBtn";
             this.loginBtn.Size = new System.Drawing.Size(131, 42);
             this.loginBtn.TabIndex = 5;
@@ -151,7 +149,7 @@
             // 
             this.passwordTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.passwordTxtBox.Location = new System.Drawing.Point(201, 108);
-            this.passwordTxtBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.passwordTxtBox.Margin = new System.Windows.Forms.Padding(4);
             this.passwordTxtBox.Name = "passwordTxtBox";
             this.passwordTxtBox.Size = new System.Drawing.Size(246, 22);
             this.passwordTxtBox.TabIndex = 4;
@@ -162,7 +160,7 @@
             // 
             this.usernameTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.usernameTxtBox.Location = new System.Drawing.Point(201, 63);
-            this.usernameTxtBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.usernameTxtBox.Margin = new System.Windows.Forms.Padding(4);
             this.usernameTxtBox.Name = "usernameTxtBox";
             this.usernameTxtBox.Size = new System.Drawing.Size(246, 22);
             this.usernameTxtBox.TabIndex = 3;
@@ -256,16 +254,6 @@
             // 
             this.usersTableAdapter.ClearBeforeFill = true;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(160, 230);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // LoginForm
             // 
             this.AcceptButton = this.loginBtn;
@@ -278,7 +266,7 @@
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login Form";
@@ -316,7 +304,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.BindingSource usersBindingSource;
         private WorldWideSportsDBDataSetTableAdapters.UsersTableAdapter usersTableAdapter;
-        private System.Windows.Forms.Button button1;
     }
 }
 

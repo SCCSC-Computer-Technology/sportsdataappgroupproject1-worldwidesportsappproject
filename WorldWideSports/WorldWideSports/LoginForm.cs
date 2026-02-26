@@ -105,13 +105,6 @@ namespace WorldWideSports
             panel2.Left = (this.ClientSize.Width - panel2.Width) / 2;
             panel2.Top = (this.ClientSize.Height - panel2.Height) / 2;
         }
-
-        //delete this was for testing below
-        private void button1_Click(object sender, EventArgs e)
-        {
-            PGADetailedForm pGADetailedForm = new PGADetailedForm();
-            pGADetailedForm.ShowDialog();
-        }
     }
 
 }
