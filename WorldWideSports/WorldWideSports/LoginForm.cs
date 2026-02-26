@@ -64,7 +64,24 @@ namespace WorldWideSports
                     MessageBox.Show("Login successful!");
 
                     //open the main form
-                    MainForm mainForm = new MainForm();
+                    MainForm mainForm = (MainForm)this.Owner;
+
+                    //reload the users table to get the latest data, especially the userId for the logged in user
+                    this.usersTableAdapter.Fill(this.worldWideSportsDBDataSet.Users);
+
+                    // find the user row that matches the username to get their Id
+                    var userRow = this.worldWideSportsDBDataSet.Users.FirstOrDefault(u => u.Username == usernameTxtBox.Text.Trim());
+
+                    // ternary operator, if the userId is not null, set it to the userId, otherwise set it to 0 as safe fallback
+                    int userId = userRow != null ? userRow.UserId : 0;
+
+                    // pass both username and userId to the main form
+                    mainForm.SetAccount(usernameTxtBox.Text.Trim(), userId);
+
+                    //this will show the group boxes to save the favorite teams and players only when the user logs in successfully
+                    mainForm.ShowGbxAndBtn();
+
+                    //shows the main form
                     mainForm.Show();
 
                     //hide the login form
@@ -85,8 +102,11 @@ namespace WorldWideSports
 
         private void exitBtn_Click(object sender, EventArgs e)
         {
-            //display a message box to the user
-            MessageBox.Show("Exiting the World Wide Sports. Goodbye!");
+            //get the main form
+            MainForm mainForm = (MainForm)this.Owner;
+
+            //close the application and return to the main form
+            mainForm.Show();
 
             //close the application
             this.Close();
