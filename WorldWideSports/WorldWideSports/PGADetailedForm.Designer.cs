@@ -65,6 +65,7 @@
             // 
             this.rchTxtBoxTournament.Location = new System.Drawing.Point(463, 21);
             this.rchTxtBoxTournament.Name = "rchTxtBoxTournament";
+            this.rchTxtBoxTournament.ReadOnly = true;
             this.rchTxtBoxTournament.Size = new System.Drawing.Size(622, 551);
             this.rchTxtBoxTournament.TabIndex = 2;
             this.rchTxtBoxTournament.Text = "";
@@ -101,10 +102,10 @@
             // 
             // lblPGATitle
             // 
-            this.lblPGATitle.AutoSize = true;
-            this.lblPGATitle.Location = new System.Drawing.Point(472, 9);
+            this.lblPGATitle.Font = new System.Drawing.Font("Britannic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPGATitle.Location = new System.Drawing.Point(451, 9);
             this.lblPGATitle.Name = "lblPGATitle";
-            this.lblPGATitle.Size = new System.Drawing.Size(80, 16);
+            this.lblPGATitle.Size = new System.Drawing.Size(184, 39);
             this.lblPGATitle.TabIndex = 4;
             this.lblPGATitle.Text = "PGA Details";
             // 
@@ -174,7 +175,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pGA_PLAYER_STATSBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pGA_PlayersBindingSource)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

@@ -209,6 +209,7 @@ namespace WorldWideSports
 
         private void btnExit_Click(object sender, EventArgs e)
         {
+            //this will close the program
             MessageBox.Show("Thank you for using World Wide Sports! Goodbye!");
             this.Close();
         }
@@ -275,7 +276,17 @@ namespace WorldWideSports
 
         private void btnPgaAndNflUpcoming_Click(object sender, EventArgs e)
         {
+            // open the fixtures form
+            UpcomingFixtures fixturesForm = new UpcomingFixtures();
 
+            //the parent of the upcoming fixtures form
+            fixturesForm.Owner = this;
+
+            //show the fixtures form
+            fixturesForm.Show();
+
+            //this will hide the form while the fixtures form is open
+            this.Hide();
         }
     }
 }
