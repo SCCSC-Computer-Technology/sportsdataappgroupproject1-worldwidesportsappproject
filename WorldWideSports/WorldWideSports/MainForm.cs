@@ -21,6 +21,11 @@ namespace WorldWideSports
         //this is the userid that will be used to link the favorite teams and players to the user account, it will be set when the user logs in successfully
         public int CurrentUserId { get; set; }
 
+
+        // flags to track if both favorite buttons have been clicked
+        private bool nflSaved = false;
+        private bool pgaSaved = false;
+
         private void btnViewNfl_Click(object sender, EventArgs e)
         {
             //opens the nfl details form
@@ -97,6 +102,19 @@ namespace WorldWideSports
                     MessageBox.Show("Favorite team saved!");
 
                 }
+                //hides the favorite team selection group box after saving
+                gbxNfl.Visible = false;
+
+                //set this variable to true to indicate that the user has saved their favorite nfl team
+                nflSaved = true;
+
+                //if both the nfl and pga favorite buttons have been clicked, show the containers
+                if (nflSaved && pgaSaved)
+                {
+                    btnPgaAndNflUpcoming.Visible = true;
+                    btnViewNfl.Visible = true;
+                    btnViewPga.Visible = true;
+                }
             }
             catch (Exception ex)
             {
@@ -137,6 +155,19 @@ namespace WorldWideSports
                     // user has no favorite player yet so insert a new row
                     favoritePGAPlayersTableAdapter.Insert(CurrentUserId, selectedPlayer);
                     MessageBox.Show("Favorite player saved!");
+                }
+                //hides the favorite player  selection group box after saving
+                gbxPga.Visible = false;
+
+                //this will set the pgaSaved variable to true to indicate that the user has saved their favorite pga player
+                pgaSaved = true;
+
+                //if both the nfl and pga favorite buttons have been clicked, show the containers
+                if (nflSaved && pgaSaved)
+                {
+                    btnPgaAndNflUpcoming.Visible = true;
+                    btnViewNfl.Visible = true;
+                    btnViewPga.Visible = true;
                 }
             }
             catch (Exception ex)
@@ -186,16 +217,15 @@ namespace WorldWideSports
             //show the group boxes to save the favorite teams and players only when the user logs in successfully
             gbxNfl.Visible = true;
             gbxPga.Visible = true;
-            btnViewNfl.Visible = true;
-            btnViewPga.Visible = true;
         }
         public void NoShowGbxAndBtn()
         {
-            //wpll not show the group boxes to save the favorite teams and players only when the user logs in successfully
+            //wpll not show the group boxes and containers
             gbxNfl.Visible = false;
             gbxPga.Visible = false; ;
-            btnViewNfl.Visible = false;
             btnViewPga.Visible = false;
+            btnViewNfl.Visible = false;
+            btnPgaAndNflUpcoming.Visible = false;
         }
         public void SetAccount(string username, int userId)
         {
@@ -242,5 +272,10 @@ namespace WorldWideSports
             {"TEN", "Tennessee Titans"},
             {"WAS", "Washington Commanders"}
         };
+
+        private void btnPgaAndNflUpcoming_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
