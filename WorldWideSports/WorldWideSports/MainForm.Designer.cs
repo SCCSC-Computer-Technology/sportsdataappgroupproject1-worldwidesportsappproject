@@ -75,13 +75,13 @@
             // btnViewNfl
             // 
             this.btnViewNfl.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnViewNfl.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnViewNfl.Font = new System.Drawing.Font("Britannic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewNfl.Location = new System.Drawing.Point(400, 52);
             this.btnViewNfl.Name = "btnViewNfl";
             this.btnViewNfl.Size = new System.Drawing.Size(180, 44);
             this.btnViewNfl.TabIndex = 11;
             this.btnViewNfl.Text = "View NFL Details";
+            this.mainFormToolTip.SetToolTip(this.btnViewNfl, "Click to View Nfl Details");
             this.btnViewNfl.UseVisualStyleBackColor = false;
             this.btnViewNfl.Visible = false;
             this.btnViewNfl.Click += new System.EventHandler(this.btnViewNfl_Click);
@@ -94,6 +94,7 @@
             this.btnViewPga.Size = new System.Drawing.Size(187, 44);
             this.btnViewPga.TabIndex = 12;
             this.btnViewPga.Text = "View PGA Details";
+            this.mainFormToolTip.SetToolTip(this.btnViewPga, "Click to View PGA Details");
             this.btnViewPga.UseVisualStyleBackColor = true;
             this.btnViewPga.Visible = false;
             this.btnViewPga.Click += new System.EventHandler(this.btnViewPga_Click);
@@ -118,6 +119,7 @@
             this.btnLoginCreate.Size = new System.Drawing.Size(231, 39);
             this.btnLoginCreate.TabIndex = 14;
             this.btnLoginCreate.Text = "Log In/Create Account";
+            this.mainFormToolTip.SetToolTip(this.btnLoginCreate, "Click to Login or Create Account");
             this.btnLoginCreate.UseVisualStyleBackColor = true;
             this.btnLoginCreate.Click += new System.EventHandler(this.btnLoginCreate_Click);
             // 
@@ -153,7 +155,8 @@
             this.btnSavePga.Name = "btnSavePga";
             this.btnSavePga.Size = new System.Drawing.Size(188, 37);
             this.btnSavePga.TabIndex = 3;
-            this.btnSavePga.Text = "Save Favorite Player";
+            this.btnSavePga.Text = "&Save Favorite Player";
+            this.mainFormToolTip.SetToolTip(this.btnSavePga, "Click to Save Your Favorite Player");
             this.btnSavePga.UseVisualStyleBackColor = true;
             this.btnSavePga.Click += new System.EventHandler(this.btnSavePga_Click);
             // 
@@ -164,6 +167,7 @@
             this.cbxPga.Name = "cbxPga";
             this.cbxPga.Size = new System.Drawing.Size(225, 28);
             this.cbxPga.TabIndex = 0;
+            this.mainFormToolTip.SetToolTip(this.cbxPga, "Select Your Favorite Player");
             // 
             // gbxHolder1
             // 
@@ -202,7 +206,8 @@
             this.btnSaveFavTeam.Name = "btnSaveFavTeam";
             this.btnSaveFavTeam.Size = new System.Drawing.Size(207, 37);
             this.btnSaveFavTeam.TabIndex = 1;
-            this.btnSaveFavTeam.Text = "Save Favorite Team";
+            this.btnSaveFavTeam.Text = "&Save Favorite Team";
+            this.mainFormToolTip.SetToolTip(this.btnSaveFavTeam, "Click to Save Your Favorite Team");
             this.btnSaveFavTeam.UseVisualStyleBackColor = true;
             this.btnSaveFavTeam.Click += new System.EventHandler(this.btnSaveFavTeam_Click);
             // 
@@ -213,6 +218,7 @@
             this.cbxNflTeams.Name = "cbxNflTeams";
             this.cbxNflTeams.Size = new System.Drawing.Size(225, 28);
             this.cbxNflTeams.TabIndex = 0;
+            this.mainFormToolTip.SetToolTip(this.cbxNflTeams, "Select Your Favorite Team");
             // 
             // pictureBox1
             // 
@@ -235,6 +241,7 @@
             this.btnExit.Size = new System.Drawing.Size(79, 27);
             this.btnExit.TabIndex = 15;
             this.btnExit.Text = "E&xit";
+            this.mainFormToolTip.SetToolTip(this.btnExit, "Click to Exit");
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -267,6 +274,7 @@
             this.btnPgaAndNflUpcoming.Size = new System.Drawing.Size(181, 43);
             this.btnPgaAndNflUpcoming.TabIndex = 13;
             this.btnPgaAndNflUpcoming.Text = "Upcoming Fixtures";
+            this.mainFormToolTip.SetToolTip(this.btnPgaAndNflUpcoming, "Click to View Upcoming Fixtures");
             this.btnPgaAndNflUpcoming.UseVisualStyleBackColor = true;
             this.btnPgaAndNflUpcoming.Visible = false;
             this.btnPgaAndNflUpcoming.Click += new System.EventHandler(this.btnPgaAndNflUpcoming_Click);

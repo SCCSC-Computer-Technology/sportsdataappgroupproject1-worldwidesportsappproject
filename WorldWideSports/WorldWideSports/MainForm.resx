@@ -2222,6 +2222,12 @@
         AAAAoM38/wHPxa8uaBv8vwAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="mainFormToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1336, 16</value>
+  </metadata>
+  <metadata name="mainFormToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1336, 16</value>
+  </metadata>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAACDQAAANICAYAAAAysy2JAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -4762,8 +4768,5 @@
   </metadata>
   <metadata name="nfL_PLAYER_STATSTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1449, 13</value>
-  </metadata>
-  <metadata name="mainFormToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1336, 16</value>
   </metadata>
 </root>

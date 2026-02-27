@@ -57,6 +57,7 @@
             this.Controls.Add(this.cmbBoxPlayers);
             this.Controls.Add(this.grpBox);
             this.Name = "NFLDetailedForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NFLDetailedForm";
             this.ResumeLayout(false);
 
