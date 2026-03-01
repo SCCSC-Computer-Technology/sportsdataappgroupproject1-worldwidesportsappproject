@@ -112,7 +112,7 @@
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(128, 37);
             this.btnBack.TabIndex = 3;
-            this.btnBack.Text = "< &Go Back";
+            this.btnBack.Text = "< &Back";
             this.upcomingFixToolTip.SetToolTip(this.btnBack, "Click to go back to the Main page");
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);

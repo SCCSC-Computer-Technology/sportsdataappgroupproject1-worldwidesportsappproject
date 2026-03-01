@@ -277,13 +277,13 @@
             // 
             // lblTitle
             // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.Location = new System.Drawing.Point(265, 14);
+            this.lblTitle.Font = new System.Drawing.Font("Britannic Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblTitle.Location = new System.Drawing.Point(339, 20);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(266, 32);
+            this.lblTitle.Size = new System.Drawing.Size(222, 29);
             this.lblTitle.TabIndex = 8;
-            this.lblTitle.Text = "NFL Detailed View";
+            this.lblTitle.Text = "NFL Details";
             // 
             // pnlBackground
             // 
@@ -300,12 +300,13 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(913, 14);
+            this.btnExit.Font = new System.Drawing.Font("Britannic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Location = new System.Drawing.Point(893, 14);
             this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.Size = new System.Drawing.Size(95, 35);
             this.btnExit.TabIndex = 9;
-            this.btnExit.Text = "Exit";
+            this.btnExit.Text = "< &Back";
             this.toolTipNFLDetails.SetToolTip(this.btnExit, "Exit Detailed View");
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
@@ -339,7 +340,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.favoriteNFLTeamsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlBackground.ResumeLayout(false);
-            this.pnlBackground.PerformLayout();
             this.ResumeLayout(false);
 
         }

@@ -109,8 +109,10 @@
             // 
             // lblPGATitle
             // 
-            this.lblPGATitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPGATitle.Location = new System.Drawing.Point(322, 10);
+            this.lblPGATitle.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.lblPGATitle.Font = new System.Drawing.Font("Britannic Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPGATitle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblPGATitle.Location = new System.Drawing.Point(307, 16);
             this.lblPGATitle.Name = "lblPGATitle";
             this.lblPGATitle.Size = new System.Drawing.Size(184, 39);
             this.lblPGATitle.TabIndex = 4;
@@ -195,11 +197,12 @@
             // 
             // btnExit
             // 
+            this.btnExit.Font = new System.Drawing.Font("Britannic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Location = new System.Drawing.Point(832, 15);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.Size = new System.Drawing.Size(92, 34);
             this.btnExit.TabIndex = 9;
-            this.btnExit.Text = "Exit";
+            this.btnExit.Text = "< &Back";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 

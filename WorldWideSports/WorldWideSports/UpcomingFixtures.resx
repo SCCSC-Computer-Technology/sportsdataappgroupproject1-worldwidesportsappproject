@@ -124,7 +124,7 @@
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAACDQAAANICAYAAAAysy2JAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAA/7JJREFUeF7s3QeUXNWd7/sWwe/Z747vnXvvOI7T2GPPjGfGEiKYaEy0AdsEy4Bt
+        DwAACw8BkvkDpQAA/7JJREFUeF7s3QeUXNWd7/sWwe/Z747vnXvvOI7T2GPPjGfGEiKYaEy0AdsEy4Bt
         oo1ACBEFiNzCRCGBCEI551bOUit2UKvVakktdc4555xrv7UPFD5n71N1qruruyt8P2v9lpebs1tS1a5T
         /6qdIiIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -2648,7 +2648,7 @@
 </value>
   </data>
   <metadata name="nfL_GamesTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>815, 28</value>
+    <value>1140, 20</value>
   </metadata>
   <metadata name="pgA_TOURNAMENTTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>436, 22</value>

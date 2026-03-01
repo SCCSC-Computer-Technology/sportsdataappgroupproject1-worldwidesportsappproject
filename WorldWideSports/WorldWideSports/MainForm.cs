@@ -32,6 +32,7 @@ namespace WorldWideSports
             NFLDetailedForm nflDetails = new NFLDetailedForm(nflTeamNames, CurrentUserId);
             nflDetails.Owner = this;
             nflDetails.Show();
+            this.Hide();
         }
 
         private void btnViewPga_Click(object sender, EventArgs e)
@@ -40,6 +41,7 @@ namespace WorldWideSports
             PGADetailedForm pgaDetails = new PGADetailedForm(CurrentUserId);
             pgaDetails.Owner = this;
             pgaDetails.Show();
+            this.Hide();
         }
 
         private void btnLoginCreate_Click(object sender, EventArgs e)

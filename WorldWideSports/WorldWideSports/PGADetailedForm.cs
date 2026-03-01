@@ -133,6 +133,14 @@ namespace WorldWideSports
 
         private void btnExit_Click(object sender, EventArgs e)
         {
+            //sorry changed this
+            //get the main form
+            MainForm mainForm = (MainForm)this.Owner;
+
+            //close the application and return to the main form
+            mainForm.Show();
+
+            //this will close the form and send you back to the main
             this.Close();
         }
     }

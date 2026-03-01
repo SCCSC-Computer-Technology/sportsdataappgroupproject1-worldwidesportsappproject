@@ -61,7 +61,7 @@ namespace WorldWideSports
                 {
                     var gamesRow = worldWideSportsDBDataSet.NFL_Games.Rows
                         .Cast<WorldWideSportsDBDataSet.NFL_GamesRow>()
-                        .Where(x => x.home_team.ToString() == favRow.TeamAbbr.ToString());
+                        .Where(x => x.home_team.ToString() == favRow.TeamAbbr.ToString() && (x.season == "2023" || x.season == "2024"));//added 2023 and 2024 filter
                     foreach (var game in gamesRow)
                     {
                         //set every class atribute with the column in the table
@@ -110,14 +110,16 @@ namespace WorldWideSports
             if (cmbBoxTeams.SelectedIndex != -1)
             {
                 //Add Games
-                //Gets GamesTable rows and compares them to selected teams  in combo box
-                foreach (WorldWideSportsDBDataSet.NFL_GamesRow gamesRow in worldWideSportsDBDataSet.NFL_Games.Rows)
+                //this filters the games based on the 2023 and 2024 season and the team selected in the combo box using linq to get the rows that match the criteria
+                var filteredGames = worldWideSportsDBDataSet.NFL_Games.Rows
+                    .Cast<WorldWideSportsDBDataSet.NFL_GamesRow>()
+                    .Where(x => x.home_team.ToString() == cmbBoxTeams.SelectedValue.ToString() && (x.season == "2023" || x.season == "2024"));
+
+                //sets the values for the class using the columns and outputs them to box for each game that matches the combo box team selection and season selection
+                foreach (var gamesRow in filteredGames)
                 {
-                    //Compares the row to check it is the same team as combo then adds it to class variable
-                    if (gamesRow.home_team.ToString() == cmbBoxTeams.SelectedValue.ToString())
-                    {
-                        //set every class atribute with the column in the table
-                        games.GameId = gamesRow.game_id.ToString();
+                    //set every class atribute with the column in the table
+                    games.GameId = gamesRow.game_id.ToString();
                         games.Season = gamesRow.season.ToString();
                         games.Week = gamesRow.week;
                         games.Gameday = gamesRow.gameday;
@@ -134,9 +136,8 @@ namespace WorldWideSports
                         games.Referee = gamesRow.referee;
 
                         rchTxtBoxGames.AppendText($"{games.ToString()}\n\n");
-                    }//end if
+                }//end if
 
-                }
 
                 //players
                 //2023
@@ -173,7 +174,7 @@ namespace WorldWideSports
                     player.PlayerAge = playerrow.Age.ToString();
                     player.PlayerName = playerrow.Player;
                     player.Position = playerrow.Pos;
-                    player.Season = "'23";
+                    player.Season = "'24";
                     player.GamesPlayed = playerrow.G.ToString();
                     player.GamesStarted = playerrow.GS.ToString();
                     player.TotalPoints = playerrow.Pts.ToString();
@@ -194,6 +195,15 @@ namespace WorldWideSports
 
         private void btnExit_Click(object sender, EventArgs e)
         {
+            //sorry changed this
+
+            //making a variable for the main form and setting it to the owner of this form which is the main form
+            MainForm mainForm = (MainForm)this.Owner;
+
+            //close the application and return to the main form
+            mainForm.Show();
+
+            //this will close the form and send you back to the main
             this.Close();
         }
     }
