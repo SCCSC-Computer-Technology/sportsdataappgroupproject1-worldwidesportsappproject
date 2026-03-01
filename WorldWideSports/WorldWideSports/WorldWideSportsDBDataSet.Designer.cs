@@ -15892,7 +15892,7 @@ where season >2022 and season <2026";
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT season, start, [end], tournament, location, position, name, score, round1," +
                 " round2, round3, round4, total, earnings, fedex_points FROM dbo.PGA_ALL_TOURNAME" +
-                "NTS\r\nwhere season >2022 and season <2025";
+                "NTS\r\nwhere season >2022 and season <2026";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         

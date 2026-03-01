@@ -759,7 +759,7 @@ SELECT game_id, season, game_type, week, gameday, weekday, gametime, away_team, 
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT season, start, [end], tournament, location, position, name, score, round1, round2, round3, round4, total, earnings, fedex_points FROM dbo.PGA_ALL_TOURNAMENTS
-where season &gt;2022 and season &lt;2025</CommandText>
+where season &gt;2022 and season &lt;2026</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -1660,10 +1660,10 @@ VALUES (@Username, @PasswordHash, GETDATE())</CommandText>
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FK_FavoriteNFLTeams_Users" msdata:parent="Users" msdata:child="FavoriteNFLTeams" msdata:parentkey="UserId" msdata:childkey="UserId" msprop:Generator_UserParentTable="Users" msprop:Generator_UserChildTable="FavoriteNFLTeams" msprop:Generator_RelationVarName="relationFK_FavoriteNFLTeams_Users" msprop:Generator_ChildPropName="GetFavoriteNFLTeamsRows" msprop:Generator_ParentPropName="UsersRow" msprop:Generator_UserRelationName="FK_FavoriteNFLTeams_Users" />
-      <msdata:Relationship name="FK_FavoritePGAPlayers_Users" msdata:parent="Users" msdata:child="FavoritePGAPlayers" msdata:parentkey="UserId" msdata:childkey="UserId" msprop:Generator_UserParentTable="Users" msprop:Generator_UserChildTable="FavoritePGAPlayers" msprop:Generator_RelationVarName="relationFK_FavoritePGAPlayers_Users" msprop:Generator_ChildPropName="GetFavoritePGAPlayersRows" msprop:Generator_ParentPropName="UsersRow" msprop:Generator_UserRelationName="FK_FavoritePGAPlayers_Users" />
-      <msdata:Relationship name="FK_FavPGA_Player" msdata:parent="PGA_Players" msdata:child="FavoritePGAPlayers_New" msdata:parentkey="PlayerId" msdata:childkey="PlayerId" msprop:Generator_UserParentTable="PGA_Players" msprop:Generator_UserChildTable="FavoritePGAPlayers_New" msprop:Generator_RelationVarName="relationFK_FavPGA_Player" msprop:Generator_ChildPropName="GetFavoritePGAPlayers_NewRows" msprop:Generator_ParentPropName="PGA_PlayersRow" msprop:Generator_UserRelationName="FK_FavPGA_Player" />
-      <msdata:Relationship name="FK_FavPGA_Users" msdata:parent="Users" msdata:child="FavoritePGAPlayers_New" msdata:parentkey="UserId" msdata:childkey="UserId" msprop:Generator_UserParentTable="Users" msprop:Generator_UserChildTable="FavoritePGAPlayers_New" msprop:Generator_RelationVarName="relationFK_FavPGA_Users" msprop:Generator_ChildPropName="GetFavoritePGAPlayers_NewRows" msprop:Generator_ParentPropName="UsersRow" msprop:Generator_UserRelationName="FK_FavPGA_Users" />
+      <msdata:Relationship name="FK_FavoriteNFLTeams_Users" msdata:parent="Users" msdata:child="FavoriteNFLTeams" msdata:parentkey="UserId" msdata:childkey="UserId" msprop:Generator_UserParentTable="Users" msprop:Generator_UserChildTable="FavoriteNFLTeams" msprop:Generator_RelationVarName="relationFK_FavoriteNFLTeams_Users" msprop:Generator_ChildPropName="GetFavoriteNFLTeamsRows" msprop:Generator_UserRelationName="FK_FavoriteNFLTeams_Users" msprop:Generator_ParentPropName="UsersRow" />
+      <msdata:Relationship name="FK_FavoritePGAPlayers_Users" msdata:parent="Users" msdata:child="FavoritePGAPlayers" msdata:parentkey="UserId" msdata:childkey="UserId" msprop:Generator_UserParentTable="Users" msprop:Generator_UserChildTable="FavoritePGAPlayers" msprop:Generator_RelationVarName="relationFK_FavoritePGAPlayers_Users" msprop:Generator_ChildPropName="GetFavoritePGAPlayersRows" msprop:Generator_UserRelationName="FK_FavoritePGAPlayers_Users" msprop:Generator_ParentPropName="UsersRow" />
+      <msdata:Relationship name="FK_FavPGA_Player" msdata:parent="PGA_Players" msdata:child="FavoritePGAPlayers_New" msdata:parentkey="PlayerId" msdata:childkey="PlayerId" msprop:Generator_UserParentTable="PGA_Players" msprop:Generator_UserChildTable="FavoritePGAPlayers_New" msprop:Generator_RelationVarName="relationFK_FavPGA_Player" msprop:Generator_ChildPropName="GetFavoritePGAPlayers_NewRows" msprop:Generator_UserRelationName="FK_FavPGA_Player" msprop:Generator_ParentPropName="PGA_PlayersRow" />
+      <msdata:Relationship name="FK_FavPGA_Users" msdata:parent="Users" msdata:child="FavoritePGAPlayers_New" msdata:parentkey="UserId" msdata:childkey="UserId" msprop:Generator_UserParentTable="Users" msprop:Generator_UserChildTable="FavoritePGAPlayers_New" msprop:Generator_RelationVarName="relationFK_FavPGA_Users" msprop:Generator_ChildPropName="GetFavoritePGAPlayers_NewRows" msprop:Generator_UserRelationName="FK_FavPGA_Users" msprop:Generator_ParentPropName="UsersRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

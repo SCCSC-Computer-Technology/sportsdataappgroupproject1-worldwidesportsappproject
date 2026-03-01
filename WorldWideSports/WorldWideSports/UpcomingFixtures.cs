@@ -46,6 +46,25 @@ namespace WorldWideSports
             {
                 richTextBox1.AppendText(game.ToString() + "\n");
             }
+
+
+            //loads the PGA Tournaments table into the dataset
+            this.pgA_ALL_TOURNAMENTSTableAdapter.Fill(this.worldWideSportsDBDataSet.PGA_ALL_TOURNAMENTS);
+
+            // Using LINQ get only 2025 tournaments
+            var pgaTournamentList = this.worldWideSportsDBDataSet.PGA_ALL_TOURNAMENTS
+                .Where(g => g.season == 2025)
+                .OrderBy(g => g.start)
+                .Select(g => new { g.season, g.tournament, g.location })
+                .Distinct()
+                .ToList();
+
+            //loop through each tournament and display in RichTextBox
+            foreach (var tournament in pgaTournamentList)
+            {
+                rtxPgaUpcoming.AppendText($"Season: {tournament.season}\nTournament: {tournament.tournament}\nLocation: {tournament.location}\n\n");
+                rtxPgaUpcoming.AppendText("--------------------------------------------------\n\n");
+            }
         }
     }
 }

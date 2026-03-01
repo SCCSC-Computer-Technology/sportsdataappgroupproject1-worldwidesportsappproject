@@ -38,8 +38,8 @@
             this.btnBack = new System.Windows.Forms.Button();
             this.upcomingFixToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.nfL_GamesTableAdapter = new WorldWideSports.WorldWideSportsDBDataSetTableAdapters.NFL_GamesTableAdapter();
-            this.pgA_TOURNAMENTTableAdapter = new WorldWideSports.WorldWideSportsDBDataSetTableAdapters.PGA_TOURNAMENTTableAdapter();
             this.worldWideSportsDBDataSet = new WorldWideSports.WorldWideSportsDBDataSet();
+            this.pgA_ALL_TOURNAMENTSTableAdapter = new WorldWideSports.WorldWideSportsDBDataSetTableAdapters.PGA_ALL_TOURNAMENTSTableAdapter();
             this.gbxPgaGames.SuspendLayout();
             this.gbxNflGames.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -121,14 +121,14 @@
             // 
             this.nfL_GamesTableAdapter.ClearBeforeFill = true;
             // 
-            // pgA_TOURNAMENTTableAdapter
-            // 
-            this.pgA_TOURNAMENTTableAdapter.ClearBeforeFill = true;
-            // 
             // worldWideSportsDBDataSet
             // 
             this.worldWideSportsDBDataSet.DataSetName = "WorldWideSportsDBDataSet";
             this.worldWideSportsDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // pgA_ALL_TOURNAMENTSTableAdapter
+            // 
+            this.pgA_ALL_TOURNAMENTSTableAdapter.ClearBeforeFill = true;
             // 
             // UpcomingFixtures
             // 
@@ -163,7 +163,7 @@
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.ToolTip upcomingFixToolTip;
         private WorldWideSportsDBDataSetTableAdapters.NFL_GamesTableAdapter nfL_GamesTableAdapter;
-        private WorldWideSportsDBDataSetTableAdapters.PGA_TOURNAMENTTableAdapter pgA_TOURNAMENTTableAdapter;
         private WorldWideSportsDBDataSet worldWideSportsDBDataSet;
+        private WorldWideSportsDBDataSetTableAdapters.PGA_ALL_TOURNAMENTSTableAdapter pgA_ALL_TOURNAMENTSTableAdapter;
     }
 }
