@@ -52,6 +52,7 @@
             this.nfL_PLAYER_STATSTableAdapter = new WorldWideSports.WorldWideSportsDBDataSetTableAdapters.NFL_PLAYER_STATSTableAdapter();
             this.mainFormToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.btnPgaAndNflUpcoming = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.gbxPga.SuspendLayout();
             this.gbxHolder1.SuspendLayout();
@@ -172,6 +173,7 @@
             // gbxHolder1
             // 
             this.gbxHolder1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.gbxHolder1.Controls.Add(this.button1);
             this.gbxHolder1.Controls.Add(this.gbxNfl);
             this.gbxHolder1.Controls.Add(this.gbxPga);
             this.gbxHolder1.Controls.Add(this.pictureBox2);
@@ -279,6 +281,16 @@
             this.btnPgaAndNflUpcoming.Visible = false;
             this.btnPgaAndNflUpcoming.Click += new System.EventHandler(this.btnPgaAndNflUpcoming_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(75, 61);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -333,5 +345,6 @@
         private WorldWideSportsDBDataSetTableAdapters.NFL_PLAYER_STATSTableAdapter nfL_PLAYER_STATSTableAdapter;
         private System.Windows.Forms.ToolTip mainFormToolTip;
         private System.Windows.Forms.Button btnPgaAndNflUpcoming;
+        private System.Windows.Forms.Button button1;
     }
 }
