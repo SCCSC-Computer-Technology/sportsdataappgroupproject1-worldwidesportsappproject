@@ -288,11 +288,5 @@ namespace WorldWideSports
             //this will hide the form while the fixtures form is open
             this.Hide();
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-           // NFLDetailedForm nflDetails = new NFLDetailedForm(nflTeamNames, CurrentUserId);
-            //nflDetails.Show();
-        }
     }
 }
