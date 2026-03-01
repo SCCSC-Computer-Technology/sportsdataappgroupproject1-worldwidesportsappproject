@@ -14,13 +14,17 @@ namespace WorldWideSports
 {
     public partial class PGADetailedForm : Form
     {
-        public PGADetailedForm()
+        int user;
+        public PGADetailedForm(int userId)
         {
             InitializeComponent();
+            user = userId;
         }
 
         private void PGADetailedForm_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'worldWideSportsDBDataSet.FavoritePGAPlayers' table. You can move, or remove it, as needed.
+            this.favoritePGAPlayersTableAdapter.Fill(this.worldWideSportsDBDataSet.FavoritePGAPlayers);
             // TODO: This line of code loads data into the 'worldWideSportsDBDataSet.PGA_ALL_TOURNAMENTS' table. You can move, or remove it, as needed.
             this.pGA_ALL_TOURNAMENTSTableAdapter.Fill(this.worldWideSportsDBDataSet.PGA_ALL_TOURNAMENTS);
             // TODO: This line of code loads data into the 'worldWideSportsDBDataSet.PGA_PLAYER_STATS' table. You can move, or remove it, as needed.
@@ -34,6 +38,35 @@ namespace WorldWideSports
             cmbBoxPlayers.Text = "Select Player";
             rchTxtBoxStats.Clear();
             rchTxtBoxTournament.Clear();
+
+
+            PGAPlayerStats favStats = new PGAPlayerStats();
+            //Load Favorite PGAPlayer
+            //Looks at datagrid view of the PGA player stats table and gets the info from it
+            foreach (WorldWideSportsDBDataSet.FavoritePGAPlayersRow favRow in worldWideSportsDBDataSet.FavoritePGAPlayers.Rows)
+            {
+                if (favRow.UserId.ToString() == user.ToString())
+                {
+                    
+                    var playerRow = worldWideSportsDBDataSet.PGA_PLAYER_STATS.Rows
+                    .Cast<WorldWideSportsDBDataSet.PGA_PLAYER_STATSRow>()
+                        .Where(x => x.player_name.ToString() == favRow.PlayerName.ToString());
+                    foreach (var players in playerRow)
+                    {
+                        favStats.PlayerName = players.player_name.ToString();
+                        favStats.Season = players.season;
+                        favStats.Wins = players.wins;
+                        favStats.TopTenFinish = players.top10_finishes;
+                        favStats.AverageScore = players.avg_score;
+                        favStats.EventsPlayed = players.events_played;
+                        favStats.TotalEarnings = players.total_earnings;
+                        favStats.TotalFedXPoints = players.total_earnings;
+                        rchBoxFavPlayer.AppendText(favStats.ToString());
+                    }
+                }
+            }
+            //Outputs the stats into txtBox
+           
         }
 
         private void pGA_PlayersBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -43,7 +76,7 @@ namespace WorldWideSports
             this.tableAdapterManager.UpdateAll(this.worldWideSportsDBDataSet);
 
         }
-
+        
 
         private void cmbBoxPlayers_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -57,38 +90,38 @@ namespace WorldWideSports
             if (cmbBoxPlayers.SelectedIndex != -1 && cmbBoxPlayers.SelectedItem != "Select Player")
             {
                 //Looks at datagrid view of the PGA player stats table and gets the info from it
-                var row = (WorldWideSportsDBDataSet.PGA_PLAYER_STATSRow)
+                var playerRow = (WorldWideSportsDBDataSet.PGA_PLAYER_STATSRow)
                 ((DataRowView)cmbBoxPlayers.SelectedItem).Row;
-                stats.PlayerName= row.player_name.ToString();
-                stats.Season = row.season;
-                stats.Wins = row.wins;
-                stats.TopTenFinish = row.top10_finishes;
-                stats.AverageScore = row.avg_score;
-                stats.EventsPlayed = row.events_played;
-                stats.TotalEarnings = row.total_earnings;
-                stats.TotalFedXPoints = row.total_earnings;
+                stats.PlayerName= playerRow.player_name.ToString();
+                stats.Season = playerRow.season;
+                stats.Wins = playerRow.wins;
+                stats.TopTenFinish = playerRow.top10_finishes;
+                stats.AverageScore = playerRow.avg_score;
+                stats.EventsPlayed = playerRow.events_played;
+                stats.TotalEarnings = playerRow.total_earnings;
+                stats.TotalFedXPoints = playerRow.total_earnings;
                 //Outputs the stats into txtBox
                 rchTxtBoxStats.Text = stats.ToString();
 
                 //This Sets up the Tournament info 
-                foreach (WorldWideSportsDBDataSet.PGA_ALL_TOURNAMENTSRow row2 in worldWideSportsDBDataSet.PGA_ALL_TOURNAMENTS.Rows)
+                foreach (WorldWideSportsDBDataSet.PGA_ALL_TOURNAMENTSRow tournamentRows in worldWideSportsDBDataSet.PGA_ALL_TOURNAMENTS.Rows)
                 {
-                    if (row2.name.ToString() == cmbBoxPlayers.Text)
+                    if (tournamentRows.name.ToString() == cmbBoxPlayers.Text)
                     {
-                        tournament.Season = row2.season;
-                        tournament.Tournament = row2.tournament;
-                        tournament.Location = row2.location;
-                        tournament.Position = row2.position;
-                        tournament.Score = row2.score;
+                        tournament.Season = tournamentRows.season;
+                        tournament.Tournament = tournamentRows.tournament;
+                        tournament.Location = tournamentRows.location;
+                        tournament.Position = tournamentRows.position;
+                        tournament.Score = tournamentRows.score;
                         //Checks if coloumn is null and gives it a zero
                         //COol stuff i found checks for nulls and puts a value 👍
-                        tournament.Round1 = row2.Isround1Null() ? 0: row2.round1;
-                        tournament.Round2 = row2.Isround2Null() ? 0 : row2.round2;
-                        tournament.Round3 = row2.Isround3Null() ? 0 : row2.round3;
-                        tournament.Round4 = row2.Isround4Null() ? 0 : row2.round4;
-                        tournament.Total = row2.total;
-                        tournament.Earnings = row2.IsearningsNull() ? 0 : row2.earnings;
-                        tournament.FedXPoints = row2.Isfedex_pointsNull() ? 0 : row2.fedex_points;
+                        tournament.Round1 = tournamentRows.Isround1Null() ? 0: tournamentRows.round1;
+                        tournament.Round2 = tournamentRows.Isround2Null() ? 0 : tournamentRows.round2;
+                        tournament.Round3 = tournamentRows.Isround3Null() ? 0 : tournamentRows.round3;
+                        tournament.Round4 = tournamentRows.Isround4Null() ? 0 : tournamentRows.round4;
+                        tournament.Total = tournamentRows.total;
+                        tournament.Earnings = tournamentRows.IsearningsNull() ? 0 : tournamentRows.earnings;
+                        tournament.FedXPoints = tournamentRows.Isfedex_pointsNull() ? 0 : tournamentRows.fedex_points;
                         rchTxtBoxTournament.AppendText(tournament.ToString() +"\n\n");
 
                     }
@@ -96,6 +129,11 @@ namespace WorldWideSports
                 
 
             }
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

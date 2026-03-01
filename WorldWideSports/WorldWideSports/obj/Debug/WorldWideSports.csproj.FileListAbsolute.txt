@@ -37,3 +37,6 @@ C:\Users\pcgen\OneDrive\Documents\GitHub\sportsdataappgroupproject1-worldwidespo
 C:\Users\pcgen\OneDrive\Documents\GitHub\sportsdataappgroupproject1-worldwidesportsappproject\WorldWideSports\WorldWideSports\obj\Debug\WorldWideSports.exe
 C:\Users\pcgen\OneDrive\Documents\GitHub\sportsdataappgroupproject1-worldwidesportsappproject\WorldWideSports\WorldWideSports\obj\Debug\WorldWideSports.pdb
 C:\Users\pcgen\OneDrive\Documents\GitHub\sportsdataappgroupproject1-worldwidesportsappproject\WorldWideSports\WorldWideSports\obj\Debug\WorldWideSports.UpcomingFixtures.resources
+C:\Users\jdort\OneDrive\Documents\GitHub\sportsdataappgroupproject1-worldwidesportsappproject\WorldWideSports\WorldWideSports\obj\Debug\WorldWideSports.MainForm.resources
+C:\Users\jdort\OneDrive\Documents\GitHub\sportsdataappgroupproject1-worldwidesportsappproject\WorldWideSports\WorldWideSports\obj\Debug\WorldWideSports.UpcomingFixtures.resources
+C:\Users\jdort\OneDrive\Documents\GitHub\sportsdataappgroupproject1-worldwidesportsappproject\WorldWideSports\WorldWideSports\bin\Debug\WorldWideSportsPlayersPlus.accdb

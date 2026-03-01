@@ -14,7 +14,7 @@
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -73,6 +73,7 @@
       <DependentUpon>NFLDetailedForm.cs</DependentUpon>
     </Compile>
     <Compile Include="NFLGames.cs" />
+    <Compile Include="NFLPlayers.cs" />
     <Compile Include="PGADetailedForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,10 +90,18 @@
     <Compile Include="UpcomingFixtures.Designer.cs">
       <DependentUpon>UpcomingFixtures.cs</DependentUpon>
     </Compile>
+    <Compile Include="WorldWideSportsDBDataSet.cs">
+      <DependentUpon>WorldWideSportsDBDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="WorldWideSportsDBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>WorldWideSportsDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WorldWideSportsPlayersPlusDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorldWideSportsPlayersPlusDataSet.xsd</DependentUpon>
     </Compile>
     <EmbeddedResource Include="CreateAccount.resx">
       <DependentUpon>CreateAccount.cs</DependentUpon>
@@ -141,9 +150,25 @@
     <None Include="WorldWideSportsDBDataSet.xss">
       <DependentUpon>WorldWideSportsDBDataSet.xsd</DependentUpon>
     </None>
+    <None Include="WorldWideSportsPlayersPlusDataSet.xsc">
+      <DependentUpon>WorldWideSportsPlayersPlusDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WorldWideSportsPlayersPlusDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WorldWideSportsPlayersPlusDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WorldWideSportsPlayersPlusDataSet.xss">
+      <DependentUpon>WorldWideSportsPlayersPlusDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WorldWideSportsPlayersPlus.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

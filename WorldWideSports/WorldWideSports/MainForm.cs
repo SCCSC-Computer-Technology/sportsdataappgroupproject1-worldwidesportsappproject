@@ -29,7 +29,7 @@ namespace WorldWideSports
         private void btnViewNfl_Click(object sender, EventArgs e)
         {
             //opens the nfl details form
-            NFLDetailedForm nflDetails = new NFLDetailedForm();
+            NFLDetailedForm nflDetails = new NFLDetailedForm(nflTeamNames, CurrentUserId);
             nflDetails.Owner = this;
             nflDetails.Show();
         }
@@ -37,7 +37,7 @@ namespace WorldWideSports
         private void btnViewPga_Click(object sender, EventArgs e)
         {
             //opens the pga details form
-            PGADetailedForm pgaDetails = new PGADetailedForm();
+            PGADetailedForm pgaDetails = new PGADetailedForm(CurrentUserId);
             pgaDetails.Owner = this;
             pgaDetails.Show();
         }

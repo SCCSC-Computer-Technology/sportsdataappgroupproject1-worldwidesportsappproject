@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PGADetailedForm));
             this.grpBoxStats = new System.Windows.Forms.GroupBox();
-            this.rchTxtBoxTournament = new System.Windows.Forms.RichTextBox();
             this.rchTxtBoxStats = new System.Windows.Forms.RichTextBox();
+            this.rchTxtBoxTournament = new System.Windows.Forms.RichTextBox();
             this.cmbBoxPlayers = new System.Windows.Forms.ComboBox();
-            this.btnSelectPlayer = new System.Windows.Forms.Button();
             this.lblPGATitle = new System.Windows.Forms.Label();
             this.pGA_ALL_TOURNAMENTSBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.worldWideSportsDBDataSet = new WorldWideSports.WorldWideSportsDBDataSet();
@@ -43,32 +43,37 @@
             this.tableAdapterManager = new WorldWideSports.WorldWideSportsDBDataSetTableAdapters.TableAdapterManager();
             this.pGA_PLAYER_STATSTableAdapter = new WorldWideSports.WorldWideSportsDBDataSetTableAdapters.PGA_PLAYER_STATSTableAdapter();
             this.pGA_ALL_TOURNAMENTSTableAdapter = new WorldWideSports.WorldWideSportsDBDataSetTableAdapters.PGA_ALL_TOURNAMENTSTableAdapter();
+            this.rchBoxFavPlayer = new System.Windows.Forms.RichTextBox();
+            this.favoritePGAPlayersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.favoritePGAPlayersTableAdapter = new WorldWideSports.WorldWideSportsDBDataSetTableAdapters.FavoritePGAPlayersTableAdapter();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.picBoxLogo = new System.Windows.Forms.PictureBox();
+            this.grpBoxTournaments = new System.Windows.Forms.GroupBox();
+            this.grpBoxFavPlayer = new System.Windows.Forms.GroupBox();
+            this.toolTipPGADetails = new System.Windows.Forms.ToolTip(this.components);
             this.grpBoxStats.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pGA_ALL_TOURNAMENTSBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.worldWideSportsDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pGA_PLAYER_STATSBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pGA_PlayersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.favoritePGAPlayersBindingSource)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxLogo)).BeginInit();
+            this.grpBoxTournaments.SuspendLayout();
+            this.grpBoxFavPlayer.SuspendLayout();
             this.SuspendLayout();
             // 
             // grpBoxStats
             // 
-            this.grpBoxStats.Controls.Add(this.rchTxtBoxTournament);
+            this.grpBoxStats.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.grpBoxStats.Controls.Add(this.rchTxtBoxStats);
             this.grpBoxStats.Location = new System.Drawing.Point(12, 70);
             this.grpBoxStats.Name = "grpBoxStats";
-            this.grpBoxStats.Size = new System.Drawing.Size(1091, 580);
+            this.grpBoxStats.Size = new System.Drawing.Size(457, 330);
             this.grpBoxStats.TabIndex = 0;
             this.grpBoxStats.TabStop = false;
-            this.grpBoxStats.Text = "Stats";
-            // 
-            // rchTxtBoxTournament
-            // 
-            this.rchTxtBoxTournament.Location = new System.Drawing.Point(463, 21);
-            this.rchTxtBoxTournament.Name = "rchTxtBoxTournament";
-            this.rchTxtBoxTournament.ReadOnly = true;
-            this.rchTxtBoxTournament.Size = new System.Drawing.Size(622, 551);
-            this.rchTxtBoxTournament.TabIndex = 2;
-            this.rchTxtBoxTournament.Text = "";
+            this.grpBoxStats.Text = "Player Stats";
             // 
             // rchTxtBoxStats
             // 
@@ -76,34 +81,36 @@
             this.rchTxtBoxStats.Location = new System.Drawing.Point(6, 21);
             this.rchTxtBoxStats.Name = "rchTxtBoxStats";
             this.rchTxtBoxStats.ReadOnly = true;
-            this.rchTxtBoxStats.Size = new System.Drawing.Size(439, 551);
+            this.rchTxtBoxStats.Size = new System.Drawing.Size(439, 303);
             this.rchTxtBoxStats.TabIndex = 0;
             this.rchTxtBoxStats.Text = "";
+            // 
+            // rchTxtBoxTournament
+            // 
+            this.rchTxtBoxTournament.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rchTxtBoxTournament.Location = new System.Drawing.Point(6, 21);
+            this.rchTxtBoxTournament.Name = "rchTxtBoxTournament";
+            this.rchTxtBoxTournament.ReadOnly = true;
+            this.rchTxtBoxTournament.Size = new System.Drawing.Size(474, 619);
+            this.rchTxtBoxTournament.TabIndex = 2;
+            this.rchTxtBoxTournament.Text = "";
             // 
             // cmbBoxPlayers
             // 
             this.cmbBoxPlayers.FormattingEnabled = true;
             this.cmbBoxPlayers.Items.AddRange(new object[] {
             "SelectPlayer"});
-            this.cmbBoxPlayers.Location = new System.Drawing.Point(13, 40);
+            this.cmbBoxPlayers.Location = new System.Drawing.Point(587, 14);
             this.cmbBoxPlayers.Name = "cmbBoxPlayers";
-            this.cmbBoxPlayers.Size = new System.Drawing.Size(209, 24);
+            this.cmbBoxPlayers.Size = new System.Drawing.Size(176, 24);
             this.cmbBoxPlayers.TabIndex = 1;
+            this.toolTipPGADetails.SetToolTip(this.cmbBoxPlayers, "Select PGA Player");
             this.cmbBoxPlayers.SelectedIndexChanged += new System.EventHandler(this.cmbBoxPlayers_SelectedIndexChanged);
-            // 
-            // btnSelectPlayer
-            // 
-            this.btnSelectPlayer.Location = new System.Drawing.Point(228, 40);
-            this.btnSelectPlayer.Name = "btnSelectPlayer";
-            this.btnSelectPlayer.Size = new System.Drawing.Size(75, 24);
-            this.btnSelectPlayer.TabIndex = 3;
-            this.btnSelectPlayer.Text = "Select";
-            this.btnSelectPlayer.UseVisualStyleBackColor = true;
             // 
             // lblPGATitle
             // 
-            this.lblPGATitle.Font = new System.Drawing.Font("Britannic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPGATitle.Location = new System.Drawing.Point(451, 9);
+            this.lblPGATitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPGATitle.Location = new System.Drawing.Point(322, 10);
             this.lblPGATitle.Name = "lblPGATitle";
             this.lblPGATitle.Size = new System.Drawing.Size(184, 39);
             this.lblPGATitle.TabIndex = 4;
@@ -156,14 +163,87 @@
             // 
             this.pGA_ALL_TOURNAMENTSTableAdapter.ClearBeforeFill = true;
             // 
+            // rchBoxFavPlayer
+            // 
+            this.rchBoxFavPlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
+            this.rchBoxFavPlayer.Location = new System.Drawing.Point(7, 21);
+            this.rchBoxFavPlayer.Name = "rchBoxFavPlayer";
+            this.rchBoxFavPlayer.ReadOnly = true;
+            this.rchBoxFavPlayer.Size = new System.Drawing.Size(438, 283);
+            this.rchBoxFavPlayer.TabIndex = 5;
+            this.rchBoxFavPlayer.Text = "";
+            // 
+            // favoritePGAPlayersBindingSource
+            // 
+            this.favoritePGAPlayersBindingSource.DataMember = "FavoritePGAPlayers";
+            this.favoritePGAPlayersBindingSource.DataSource = this.worldWideSportsDBDataSet;
+            // 
+            // favoritePGAPlayersTableAdapter
+            // 
+            this.favoritePGAPlayersTableAdapter.ClearBeforeFill = true;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnExit);
+            this.panel1.Controls.Add(this.picBoxLogo);
+            this.panel1.Controls.Add(this.lblPGATitle);
+            this.panel1.Controls.Add(this.cmbBoxPlayers);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(949, 52);
+            this.panel1.TabIndex = 5;
+            // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(832, 15);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.TabIndex = 9;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // picBoxLogo
+            // 
+            this.picBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("picBoxLogo.Image")));
+            this.picBoxLogo.Location = new System.Drawing.Point(3, 2);
+            this.picBoxLogo.Name = "picBoxLogo";
+            this.picBoxLogo.Size = new System.Drawing.Size(190, 47);
+            this.picBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxLogo.TabIndex = 8;
+            this.picBoxLogo.TabStop = false;
+            // 
+            // grpBoxTournaments
+            // 
+            this.grpBoxTournaments.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.grpBoxTournaments.Controls.Add(this.rchTxtBoxTournament);
+            this.grpBoxTournaments.Location = new System.Drawing.Point(475, 70);
+            this.grpBoxTournaments.Name = "grpBoxTournaments";
+            this.grpBoxTournaments.Size = new System.Drawing.Size(486, 646);
+            this.grpBoxTournaments.TabIndex = 6;
+            this.grpBoxTournaments.TabStop = false;
+            this.grpBoxTournaments.Text = "TournamentsStats";
+            // 
+            // grpBoxFavPlayer
+            // 
+            this.grpBoxFavPlayer.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.grpBoxFavPlayer.Controls.Add(this.rchBoxFavPlayer);
+            this.grpBoxFavPlayer.Location = new System.Drawing.Point(12, 406);
+            this.grpBoxFavPlayer.Name = "grpBoxFavPlayer";
+            this.grpBoxFavPlayer.Size = new System.Drawing.Size(457, 310);
+            this.grpBoxFavPlayer.TabIndex = 7;
+            this.grpBoxFavPlayer.TabStop = false;
+            this.grpBoxFavPlayer.Text = "Favorite Player Stats";
+            // 
             // PGADetailedForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1123, 654);
-            this.Controls.Add(this.lblPGATitle);
-            this.Controls.Add(this.btnSelectPlayer);
-            this.Controls.Add(this.cmbBoxPlayers);
+            this.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.ClientSize = new System.Drawing.Size(967, 725);
+            this.Controls.Add(this.grpBoxFavPlayer);
+            this.Controls.Add(this.grpBoxTournaments);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.grpBoxStats);
             this.Name = "PGADetailedForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -174,6 +254,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.worldWideSportsDBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pGA_PLAYER_STATSBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pGA_PlayersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.favoritePGAPlayersBindingSource)).EndInit();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxLogo)).EndInit();
+            this.grpBoxTournaments.ResumeLayout(false);
+            this.grpBoxFavPlayer.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -188,11 +273,19 @@
         private WorldWideSportsDBDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private WorldWideSportsDBDataSetTableAdapters.PGA_PLAYER_STATSTableAdapter pGA_PLAYER_STATSTableAdapter;
         private System.Windows.Forms.BindingSource pGA_PLAYER_STATSBindingSource;
-        private System.Windows.Forms.Button btnSelectPlayer;
         private System.Windows.Forms.RichTextBox rchTxtBoxStats;
         private System.Windows.Forms.Label lblPGATitle;
         private System.Windows.Forms.BindingSource pGA_ALL_TOURNAMENTSBindingSource;
         private WorldWideSportsDBDataSetTableAdapters.PGA_ALL_TOURNAMENTSTableAdapter pGA_ALL_TOURNAMENTSTableAdapter;
         private System.Windows.Forms.RichTextBox rchTxtBoxTournament;
+        private System.Windows.Forms.RichTextBox rchBoxFavPlayer;
+        private System.Windows.Forms.BindingSource favoritePGAPlayersBindingSource;
+        private WorldWideSportsDBDataSetTableAdapters.FavoritePGAPlayersTableAdapter favoritePGAPlayersTableAdapter;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.GroupBox grpBoxTournaments;
+        private System.Windows.Forms.GroupBox grpBoxFavPlayer;
+        private System.Windows.Forms.PictureBox picBoxLogo;
+        private System.Windows.Forms.ToolTip toolTipPGADetails;
+        private System.Windows.Forms.Button btnExit;
     }
 }
