@@ -103,11 +103,13 @@ namespace WorldWideSports
                 //Outputs the stats into txtBox
                 rchTxtBoxStats.Text = stats.ToString();
 
-                //This Sets up the Tournament info 
-                foreach (WorldWideSportsDBDataSet.PGA_ALL_TOURNAMENTSRow tournamentRows in worldWideSportsDBDataSet.PGA_ALL_TOURNAMENTS.Rows)
-                {
-                    if (tournamentRows.name.ToString() == cmbBoxPlayers.Text)
-                    {
+                //this will filter the tournaments only using the 2023 and 2024 seasons
+                var filteredTournaments = worldWideSportsDBDataSet.PGA_ALL_TOURNAMENTS.Rows
+                    .Cast<WorldWideSportsDBDataSet.PGA_ALL_TOURNAMENTSRow>()
+                    .Where(x => x.name.ToString() == cmbBoxPlayers.Text && (x.season == 2023 || x.season == 2024));
+
+                foreach (var tournamentRows in filteredTournaments)
+                { 
                         tournament.Season = tournamentRows.season;
                         tournament.Tournament = tournamentRows.tournament;
                         tournament.Location = tournamentRows.location;
@@ -124,7 +126,6 @@ namespace WorldWideSports
                         tournament.FedXPoints = tournamentRows.Isfedex_pointsNull() ? 0 : tournamentRows.fedex_points;
                         rchTxtBoxTournament.AppendText(tournament.ToString() +"\n\n");
 
-                    }
                 }
                 
 
