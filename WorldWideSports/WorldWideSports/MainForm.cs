@@ -12,7 +12,7 @@ namespace WorldWideSports
 {
     public partial class MainForm : Form
     {
-        
+
         public MainForm()
         {
             InitializeComponent();
@@ -23,8 +23,11 @@ namespace WorldWideSports
 
 
         // flags to track if both favorite buttons have been clicked
+        //problem with this!!!
         private bool nflSaved = false;
         private bool pgaSaved = false;
+
+        
 
         private void btnViewNfl_Click(object sender, EventArgs e)
         {
@@ -53,10 +56,14 @@ namespace WorldWideSports
                 lblAccount.Text = "";
                 lblAccount.Visible = false;
                 btnLoginCreate.Text = "Login/Create Account";
+                //this will reset the saved flags to false
+                nflSaved = false;
+                pgaSaved = false;
                 MessageBox.Show("You have been logged out.");
                 //return the form to the login state and exit the method so it doesn't open the login form again
                 return;
             }
+
             //this takes the user to the login form where they can either log in or create an account
             LoginForm loginForm = new LoginForm();
             //this will make the main form the owner of the login form
@@ -110,13 +117,8 @@ namespace WorldWideSports
                 //set this variable to true to indicate that the user has saved their favorite nfl team
                 nflSaved = true;
 
-                //if both the nfl and pga favorite buttons have been clicked, show the containers
-                if (nflSaved && pgaSaved)
-                {
-                    btnPgaAndNflUpcoming.Visible = true;
-                    btnViewNfl.Visible = true;
-                    btnViewPga.Visible = true;
-                }
+                //shows the main buttons
+                ShowMainButtons();
             }
             catch (Exception ex)
             {
@@ -164,13 +166,9 @@ namespace WorldWideSports
                 //this will set the pgaSaved variable to true to indicate that the user has saved their favorite pga player
                 pgaSaved = true;
 
-                //if both the nfl and pga favorite buttons have been clicked, show the containers
-                if (nflSaved && pgaSaved)
-                {
-                    btnPgaAndNflUpcoming.Visible = true;
-                    btnViewNfl.Visible = true;
-                    btnViewPga.Visible = true;
-                }
+                //this will show the main buttons if both the nflSaved and pgaSaved variables are true
+                ShowMainButtons();
+
             }
             catch (Exception ex)
             {
@@ -289,6 +287,16 @@ namespace WorldWideSports
 
             //this will hide the form while the fixtures form is open
             this.Hide();
+        }
+
+        public void ShowMainButtons()
+        {
+            if (nflSaved && pgaSaved)
+            {
+                btnPgaAndNflUpcoming.Visible = true;
+                btnViewNfl.Visible = true;
+                btnViewPga.Visible = true;
+            }
         }
     }
 }
