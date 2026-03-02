@@ -59,8 +59,7 @@ namespace WorldWideSports
             {
                 if (favRow.UserId.ToString() == user.ToString())
                 {
-                    var gamesRow = worldWideSportsDBDataSet.NFL_Games.Rows
-                        .Cast<WorldWideSportsDBDataSet.NFL_GamesRow>()
+                    var gamesRow = worldWideSportsDBDataSet.NFL_Games
                         .Where(x => x.home_team.ToString() == favRow.TeamAbbr.ToString() && (x.season == "2023" || x.season == "2024"));//added 2023 and 2024 filter
                     foreach (var game in gamesRow)
                     {
@@ -82,13 +81,12 @@ namespace WorldWideSports
                         favGames.AwayCoach = game.away_coach;
                         favGames.HomeCoach = game.home_coach;
                         favGames.Referee = game.referee;
-                        rchTxtBoxFavTeams.AppendText(favGames.ToString()+"\n");
+                        rchTxtBoxFavTeams.AppendText(favGames.ToString()+"\n\n");
                     }
                 }
             }
             //Players
-            var player24Data = worldWideSportsPlayersPlusDataSet.PlayerStats2024.Rows
-           .Cast<WorldWideSportsPlayersPlusDataSet.PlayerStats2024Row>()
+            var player24Data = worldWideSportsPlayersPlusDataSet.PlayerStats2024
            .Where(x => x.Team.ToString() == teamAbrev.ToString())
            .OrderBy(x => x.Player);
             foreach (var players in player24Data)
@@ -111,10 +109,8 @@ namespace WorldWideSports
             {
                 //Add Games
                 //this filters the games based on the 2023 and 2024 season and the team selected in the combo box using linq to get the rows that match the criteria
-                var filteredGames = worldWideSportsDBDataSet.NFL_Games.Rows
-                    .Cast<WorldWideSportsDBDataSet.NFL_GamesRow>()
+                var filteredGames = worldWideSportsDBDataSet.NFL_Games
                     .Where(x => x.home_team.ToString() == cmbBoxTeams.SelectedValue.ToString() && (x.season == "2023" || x.season == "2024"));
-
                 //sets the values for the class using the columns and outputs them to box for each game that matches the combo box team selection and season selection
                 foreach (var gamesRow in filteredGames)
                 {
@@ -141,10 +137,8 @@ namespace WorldWideSports
 
                 //players
                 //2023
-                var player23Data = worldWideSportsPlayersPlusDataSet.PlayerStats2023.Rows
-                // Cast to let Computer know to use specific types for the rows
+                var player23Data = worldWideSportsPlayersPlusDataSet.PlayerStats2023
                 //LINQ get player stats and rows and set them on the player class and outputs them to box
-                    .Cast<WorldWideSportsPlayersPlusDataSet.PlayerStats2023Row>()
                     .Where(x => x.Team.ToString() == cmbBoxTeams.SelectedValue.ToString())
                     .OrderBy(x => x.Player);
                 foreach (var playerrow in player23Data)
@@ -162,10 +156,8 @@ namespace WorldWideSports
                 }
 
                 //var player2024
-                //Cast to let computer know to use specific types for the rows
                 //Lingq to get the players based on teams using the combo box Values which are the team abreviations
-                var player24Data = worldWideSportsPlayersPlusDataSet.PlayerStats2024.Rows
-                    .Cast<WorldWideSportsPlayersPlusDataSet.PlayerStats2024Row>()
+                var player24Data = worldWideSportsPlayersPlusDataSet.PlayerStats2024
                     .Where(x => x.Team.ToString() == cmbBoxTeams.SelectedValue.ToString())
                     .OrderBy(x => x.Player);
                 foreach (var playerrow in player24Data)
@@ -183,6 +175,10 @@ namespace WorldWideSports
                 }
 
             }//end if
+            //sets your cursor to the start of the boxes
+            rchTxtBoxGames.SelectionStart = 0;
+            rchTxtBoxPlayer23.SelectionStart = 0;
+            rchTxtBoxPlayer24.SelectionStart = 0;
         }
 
         private void nFL_GamesBindingNavigatorSaveItem_Click(object sender, EventArgs e)
