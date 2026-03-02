@@ -241,6 +241,7 @@
             this.rchTxtBoxFavPlayers.Location = new System.Drawing.Point(5, 258);
             this.rchTxtBoxFavPlayers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rchTxtBoxFavPlayers.Name = "rchTxtBoxFavPlayers";
+            this.rchTxtBoxFavPlayers.ReadOnly = true;
             this.rchTxtBoxFavPlayers.Size = new System.Drawing.Size(472, 186);
             this.rchTxtBoxFavPlayers.TabIndex = 3;
             this.rchTxtBoxFavPlayers.Text = "";
@@ -316,7 +317,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.ClientSize = new System.Drawing.Size(1029, 942);
+            this.ClientSize = new System.Drawing.Size(1029, 992);
             this.Controls.Add(this.pnlBackground);
             this.Controls.Add(this.grpBoxFavorite);
             this.Controls.Add(this.grpBoxTeams);

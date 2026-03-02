@@ -47,9 +47,7 @@ namespace WorldWideSports
             {
                 if (favRow.UserId.ToString() == user.ToString())
                 {
-                    
-                    var playerRow = worldWideSportsDBDataSet.PGA_PLAYER_STATS.Rows
-                    .Cast<WorldWideSportsDBDataSet.PGA_PLAYER_STATSRow>()
+                    var playerRow = worldWideSportsDBDataSet.PGA_PLAYER_STATS
                         .Where(x => x.player_name.ToString() == favRow.PlayerName.ToString());
                     foreach (var players in playerRow)
                     {
@@ -61,7 +59,7 @@ namespace WorldWideSports
                         favStats.EventsPlayed = players.events_played;
                         favStats.TotalEarnings = players.total_earnings;
                         favStats.TotalFedXPoints = players.total_earnings;
-                        rchBoxFavPlayer.AppendText(favStats.ToString());
+                        rchBoxFavPlayer.AppendText(favStats.ToString()+"\n\n");
                     }
                 }
             }
@@ -104,8 +102,7 @@ namespace WorldWideSports
                 rchTxtBoxStats.Text = stats.ToString();
 
                 //this will filter the tournaments only using the 2023 and 2024 seasons
-                var filteredTournaments = worldWideSportsDBDataSet.PGA_ALL_TOURNAMENTS.Rows
-                    .Cast<WorldWideSportsDBDataSet.PGA_ALL_TOURNAMENTSRow>()
+                var filteredTournaments = worldWideSportsDBDataSet.PGA_ALL_TOURNAMENTS
                     .Where(x => x.name.ToString() == cmbBoxPlayers.Text && (x.season == 2023 || x.season == 2024));
 
                 foreach (var tournamentRows in filteredTournaments)
