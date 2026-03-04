@@ -47,6 +47,10 @@
             this.favoriteNFLTeamsTableAdapter = new WorldWideSports.WorldWideSportsDBDataSetTableAdapters.FavoriteNFLTeamsTableAdapter();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlBackground = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pBoxTeamText = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pBoxTeamLogo = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.toolTipNFLDetails = new System.Windows.Forms.ToolTip(this.components);
             this.cmbViewSelector = new System.Windows.Forms.ComboBox();
@@ -59,10 +63,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.lblConfRank = new System.Windows.Forms.Label();
             this.lblLeageRank = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pBoxTeamLogo = new System.Windows.Forms.PictureBox();
-            this.pBoxTeamText = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.worldWideSportsDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nFL_GamesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nFL_PLAYER_STATSBindingSource)).BeginInit();
@@ -72,10 +72,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.favoriteNFLTeamsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlBackground.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pBoxTeamLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxTeamText)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxTeamLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // cmbBoxTeams
@@ -191,6 +191,42 @@
             this.pnlBackground.Size = new System.Drawing.Size(1352, 147);
             this.pnlBackground.TabIndex = 9;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.pBoxTeamText);
+            this.panel2.Location = new System.Drawing.Point(391, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(710, 141);
+            this.panel2.TabIndex = 11;
+            // 
+            // pBoxTeamText
+            // 
+            this.pBoxTeamText.Image = global::WorldWideSports.Properties.Resources.ArizonaText;
+            this.pBoxTeamText.Location = new System.Drawing.Point(0, 0);
+            this.pBoxTeamText.Name = "pBoxTeamText";
+            this.pBoxTeamText.Size = new System.Drawing.Size(710, 141);
+            this.pBoxTeamText.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBoxTeamText.TabIndex = 0;
+            this.pBoxTeamText.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.pBoxTeamLogo);
+            this.panel1.Location = new System.Drawing.Point(225, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(160, 141);
+            this.panel1.TabIndex = 10;
+            // 
+            // pBoxTeamLogo
+            // 
+            this.pBoxTeamLogo.Image = global::WorldWideSports.Properties.Resources.WashingtonText;
+            this.pBoxTeamLogo.Location = new System.Drawing.Point(0, 0);
+            this.pBoxTeamLogo.Name = "pBoxTeamLogo";
+            this.pBoxTeamLogo.Size = new System.Drawing.Size(160, 141);
+            this.pBoxTeamLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBoxTeamLogo.TabIndex = 0;
+            this.pBoxTeamLogo.TabStop = false;
+            // 
             // btnExit
             // 
             this.btnExit.Font = new System.Drawing.Font("Britannic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -218,7 +254,7 @@
             // 
             this.rchTxtBoxMain.Location = new System.Drawing.Point(12, 384);
             this.rchTxtBoxMain.Name = "rchTxtBoxMain";
-            this.rchTxtBoxMain.Size = new System.Drawing.Size(1272, 323);
+            this.rchTxtBoxMain.Size = new System.Drawing.Size(1352, 323);
             this.rchTxtBoxMain.TabIndex = 11;
             this.rchTxtBoxMain.Text = "";
             // 
@@ -298,42 +334,6 @@
             this.lblLeageRank.TabIndex = 12;
             this.lblLeageRank.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.pBoxTeamLogo);
-            this.panel1.Location = new System.Drawing.Point(225, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(160, 141);
-            this.panel1.TabIndex = 10;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.pBoxTeamText);
-            this.panel2.Location = new System.Drawing.Point(391, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(710, 141);
-            this.panel2.TabIndex = 11;
-            // 
-            // pBoxTeamLogo
-            // 
-            this.pBoxTeamLogo.Image = global::WorldWideSports.Properties.Resources.WashingtonText;
-            this.pBoxTeamLogo.Location = new System.Drawing.Point(0, 0);
-            this.pBoxTeamLogo.Name = "pBoxTeamLogo";
-            this.pBoxTeamLogo.Size = new System.Drawing.Size(160, 141);
-            this.pBoxTeamLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBoxTeamLogo.TabIndex = 0;
-            this.pBoxTeamLogo.TabStop = false;
-            // 
-            // pBoxTeamText
-            // 
-            this.pBoxTeamText.Image = global::WorldWideSports.Properties.Resources.ArizonaText;
-            this.pBoxTeamText.Location = new System.Drawing.Point(0, 0);
-            this.pBoxTeamText.Name = "pBoxTeamText";
-            this.pBoxTeamText.Size = new System.Drawing.Size(710, 141);
-            this.pBoxTeamText.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBoxTeamText.TabIndex = 0;
-            this.pBoxTeamText.TabStop = false;
-            // 
             // NFLDetailedForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -365,10 +365,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.favoriteNFLTeamsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlBackground.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pBoxTeamLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxTeamText)).EndInit();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxTeamLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
