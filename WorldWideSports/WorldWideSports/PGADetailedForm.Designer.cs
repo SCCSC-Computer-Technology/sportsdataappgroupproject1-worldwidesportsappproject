@@ -68,9 +68,11 @@
             // 
             this.grpBoxStats.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.grpBoxStats.Controls.Add(this.rchTxtBoxStats);
-            this.grpBoxStats.Location = new System.Drawing.Point(12, 70);
+            this.grpBoxStats.Location = new System.Drawing.Point(14, 88);
+            this.grpBoxStats.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grpBoxStats.Name = "grpBoxStats";
-            this.grpBoxStats.Size = new System.Drawing.Size(457, 330);
+            this.grpBoxStats.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpBoxStats.Size = new System.Drawing.Size(514, 412);
             this.grpBoxStats.TabIndex = 0;
             this.grpBoxStats.TabStop = false;
             this.grpBoxStats.Text = "Player Stats";
@@ -78,20 +80,22 @@
             // rchTxtBoxStats
             // 
             this.rchTxtBoxStats.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rchTxtBoxStats.Location = new System.Drawing.Point(6, 21);
+            this.rchTxtBoxStats.Location = new System.Drawing.Point(7, 26);
+            this.rchTxtBoxStats.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rchTxtBoxStats.Name = "rchTxtBoxStats";
             this.rchTxtBoxStats.ReadOnly = true;
-            this.rchTxtBoxStats.Size = new System.Drawing.Size(439, 303);
+            this.rchTxtBoxStats.Size = new System.Drawing.Size(493, 378);
             this.rchTxtBoxStats.TabIndex = 0;
             this.rchTxtBoxStats.Text = "";
             // 
             // rchTxtBoxTournament
             // 
             this.rchTxtBoxTournament.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rchTxtBoxTournament.Location = new System.Drawing.Point(6, 21);
+            this.rchTxtBoxTournament.Location = new System.Drawing.Point(7, 26);
+            this.rchTxtBoxTournament.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rchTxtBoxTournament.Name = "rchTxtBoxTournament";
             this.rchTxtBoxTournament.ReadOnly = true;
-            this.rchTxtBoxTournament.Size = new System.Drawing.Size(474, 619);
+            this.rchTxtBoxTournament.Size = new System.Drawing.Size(533, 773);
             this.rchTxtBoxTournament.TabIndex = 2;
             this.rchTxtBoxTournament.Text = "";
             // 
@@ -100,9 +104,10 @@
             this.cmbBoxPlayers.FormattingEnabled = true;
             this.cmbBoxPlayers.Items.AddRange(new object[] {
             "SelectPlayer"});
-            this.cmbBoxPlayers.Location = new System.Drawing.Point(587, 14);
+            this.cmbBoxPlayers.Location = new System.Drawing.Point(660, 18);
+            this.cmbBoxPlayers.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbBoxPlayers.Name = "cmbBoxPlayers";
-            this.cmbBoxPlayers.Size = new System.Drawing.Size(176, 24);
+            this.cmbBoxPlayers.Size = new System.Drawing.Size(198, 28);
             this.cmbBoxPlayers.TabIndex = 1;
             this.toolTipPGADetails.SetToolTip(this.cmbBoxPlayers, "Select PGA Player");
             this.cmbBoxPlayers.SelectedIndexChanged += new System.EventHandler(this.cmbBoxPlayers_SelectedIndexChanged);
@@ -112,9 +117,9 @@
             this.lblPGATitle.BackColor = System.Drawing.SystemColors.HotTrack;
             this.lblPGATitle.Font = new System.Drawing.Font("Britannic Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPGATitle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblPGATitle.Location = new System.Drawing.Point(307, 16);
+            this.lblPGATitle.Location = new System.Drawing.Point(345, 8);
             this.lblPGATitle.Name = "lblPGATitle";
-            this.lblPGATitle.Size = new System.Drawing.Size(184, 39);
+            this.lblPGATitle.Size = new System.Drawing.Size(207, 49);
             this.lblPGATitle.TabIndex = 4;
             this.lblPGATitle.Text = "PGA Details";
             // 
@@ -168,10 +173,11 @@
             // rchBoxFavPlayer
             // 
             this.rchBoxFavPlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
-            this.rchBoxFavPlayer.Location = new System.Drawing.Point(7, 21);
+            this.rchBoxFavPlayer.Location = new System.Drawing.Point(8, 26);
+            this.rchBoxFavPlayer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rchBoxFavPlayer.Name = "rchBoxFavPlayer";
             this.rchBoxFavPlayer.ReadOnly = true;
-            this.rchBoxFavPlayer.Size = new System.Drawing.Size(438, 283);
+            this.rchBoxFavPlayer.Size = new System.Drawing.Size(492, 353);
             this.rchBoxFavPlayer.TabIndex = 5;
             this.rchBoxFavPlayer.Text = "";
             // 
@@ -190,17 +196,19 @@
             this.panel1.Controls.Add(this.picBoxLogo);
             this.panel1.Controls.Add(this.lblPGATitle);
             this.panel1.Controls.Add(this.cmbBoxPlayers);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Location = new System.Drawing.Point(14, 15);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(949, 52);
+            this.panel1.Size = new System.Drawing.Size(1068, 65);
             this.panel1.TabIndex = 5;
             // 
             // btnExit
             // 
             this.btnExit.Font = new System.Drawing.Font("Britannic Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(832, 15);
+            this.btnExit.Location = new System.Drawing.Point(936, 11);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(92, 34);
+            this.btnExit.Size = new System.Drawing.Size(104, 42);
             this.btnExit.TabIndex = 9;
             this.btnExit.Text = "< &Back";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -210,8 +218,9 @@
             // 
             this.picBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("picBoxLogo.Image")));
             this.picBoxLogo.Location = new System.Drawing.Point(3, 2);
+            this.picBoxLogo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.picBoxLogo.Name = "picBoxLogo";
-            this.picBoxLogo.Size = new System.Drawing.Size(190, 47);
+            this.picBoxLogo.Size = new System.Drawing.Size(181, 59);
             this.picBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBoxLogo.TabIndex = 8;
             this.picBoxLogo.TabStop = false;
@@ -220,9 +229,11 @@
             // 
             this.grpBoxTournaments.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.grpBoxTournaments.Controls.Add(this.rchTxtBoxTournament);
-            this.grpBoxTournaments.Location = new System.Drawing.Point(475, 70);
+            this.grpBoxTournaments.Location = new System.Drawing.Point(534, 88);
+            this.grpBoxTournaments.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grpBoxTournaments.Name = "grpBoxTournaments";
-            this.grpBoxTournaments.Size = new System.Drawing.Size(486, 646);
+            this.grpBoxTournaments.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpBoxTournaments.Size = new System.Drawing.Size(547, 808);
             this.grpBoxTournaments.TabIndex = 6;
             this.grpBoxTournaments.TabStop = false;
             this.grpBoxTournaments.Text = "TournamentsStats";
@@ -231,26 +242,29 @@
             // 
             this.grpBoxFavPlayer.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.grpBoxFavPlayer.Controls.Add(this.rchBoxFavPlayer);
-            this.grpBoxFavPlayer.Location = new System.Drawing.Point(12, 406);
+            this.grpBoxFavPlayer.Location = new System.Drawing.Point(14, 508);
+            this.grpBoxFavPlayer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grpBoxFavPlayer.Name = "grpBoxFavPlayer";
-            this.grpBoxFavPlayer.Size = new System.Drawing.Size(457, 310);
+            this.grpBoxFavPlayer.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grpBoxFavPlayer.Size = new System.Drawing.Size(514, 388);
             this.grpBoxFavPlayer.TabIndex = 7;
             this.grpBoxFavPlayer.TabStop = false;
             this.grpBoxFavPlayer.Text = "Favorite Player Stats";
             // 
             // PGADetailedForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.ClientSize = new System.Drawing.Size(967, 725);
+            this.ClientSize = new System.Drawing.Size(1088, 906);
             this.Controls.Add(this.grpBoxFavPlayer);
             this.Controls.Add(this.grpBoxTournaments);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.grpBoxStats);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "PGADetailedForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "PGADetailedForm";
+            this.Text = "PGA Details";
             this.Load += new System.EventHandler(this.PGADetailedForm_Load);
             this.grpBoxStats.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pGA_ALL_TOURNAMENTSBindingSource)).EndInit();

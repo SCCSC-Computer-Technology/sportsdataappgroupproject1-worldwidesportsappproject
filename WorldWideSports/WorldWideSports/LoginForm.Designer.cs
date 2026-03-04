@@ -66,9 +66,9 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1400, 652);
+            this.panel1.Size = new System.Drawing.Size(1575, 815);
             this.panel1.TabIndex = 0;
             // 
             // panel2
@@ -84,20 +84,20 @@
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(447, 294);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Location = new System.Drawing.Point(503, 349);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(506, 331);
+            this.panel2.Size = new System.Drawing.Size(569, 413);
             this.panel2.TabIndex = 2;
             // 
             // createAccountBtn
             // 
             this.createAccountBtn.Font = new System.Drawing.Font("Segoe UI", 10.86792F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.createAccountBtn.ForeColor = System.Drawing.Color.Black;
-            this.createAccountBtn.Location = new System.Drawing.Point(160, 272);
-            this.createAccountBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.createAccountBtn.Location = new System.Drawing.Point(180, 340);
+            this.createAccountBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.createAccountBtn.Name = "createAccountBtn";
-            this.createAccountBtn.Size = new System.Drawing.Size(185, 42);
+            this.createAccountBtn.Size = new System.Drawing.Size(208, 52);
             this.createAccountBtn.TabIndex = 8;
             this.createAccountBtn.Text = "&Create Account";
             this.toolTip1.SetToolTip(this.createAccountBtn, "Opens form to create account");
@@ -109,10 +109,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(139, 244);
+            this.label5.Location = new System.Drawing.Point(156, 305);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(193, 23);
+            this.label5.Size = new System.Drawing.Size(241, 30);
             this.label5.TabIndex = 7;
             this.label5.Text = "Don\'t have an account?";
             // 
@@ -121,10 +121,10 @@
             this.exitBtn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.exitBtn.Font = new System.Drawing.Font("Segoe UI", 10.86792F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitBtn.ForeColor = System.Drawing.Color.Black;
-            this.exitBtn.Location = new System.Drawing.Point(317, 162);
-            this.exitBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.exitBtn.Location = new System.Drawing.Point(357, 202);
+            this.exitBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.exitBtn.Name = "exitBtn";
-            this.exitBtn.Size = new System.Drawing.Size(131, 42);
+            this.exitBtn.Size = new System.Drawing.Size(147, 52);
             this.exitBtn.TabIndex = 6;
             this.exitBtn.Text = "&Exit";
             this.toolTip1.SetToolTip(this.exitBtn, "Exit World Wide Sports");
@@ -135,10 +135,10 @@
             // 
             this.loginBtn.Font = new System.Drawing.Font("Segoe UI", 10.86792F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginBtn.ForeColor = System.Drawing.Color.Black;
-            this.loginBtn.Location = new System.Drawing.Point(61, 162);
-            this.loginBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.loginBtn.Location = new System.Drawing.Point(69, 202);
+            this.loginBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.loginBtn.Name = "loginBtn";
-            this.loginBtn.Size = new System.Drawing.Size(131, 42);
+            this.loginBtn.Size = new System.Drawing.Size(147, 52);
             this.loginBtn.TabIndex = 5;
             this.loginBtn.Text = "&Login";
             this.toolTip1.SetToolTip(this.loginBtn, "Login to your account");
@@ -148,10 +148,10 @@
             // passwordTxtBox
             // 
             this.passwordTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.passwordTxtBox.Location = new System.Drawing.Point(201, 108);
-            this.passwordTxtBox.Margin = new System.Windows.Forms.Padding(4);
+            this.passwordTxtBox.Location = new System.Drawing.Point(226, 135);
+            this.passwordTxtBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.passwordTxtBox.Name = "passwordTxtBox";
-            this.passwordTxtBox.Size = new System.Drawing.Size(246, 22);
+            this.passwordTxtBox.Size = new System.Drawing.Size(276, 26);
             this.passwordTxtBox.TabIndex = 4;
             this.toolTip1.SetToolTip(this.passwordTxtBox, "Enter Password");
             this.passwordTxtBox.UseSystemPasswordChar = true;
@@ -159,10 +159,10 @@
             // usernameTxtBox
             // 
             this.usernameTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.usernameTxtBox.Location = new System.Drawing.Point(201, 63);
-            this.usernameTxtBox.Margin = new System.Windows.Forms.Padding(4);
+            this.usernameTxtBox.Location = new System.Drawing.Point(226, 79);
+            this.usernameTxtBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.usernameTxtBox.Name = "usernameTxtBox";
-            this.usernameTxtBox.Size = new System.Drawing.Size(246, 22);
+            this.usernameTxtBox.Size = new System.Drawing.Size(276, 26);
             this.usernameTxtBox.TabIndex = 3;
             this.toolTip1.SetToolTip(this.usernameTxtBox, "Enter Username");
             // 
@@ -171,10 +171,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(56, 108);
+            this.label4.Location = new System.Drawing.Point(63, 135);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(95, 23);
+            this.label4.Size = new System.Drawing.Size(117, 30);
             this.label4.TabIndex = 2;
             this.label4.Text = "Password: ";
             // 
@@ -183,10 +183,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(56, 64);
+            this.label3.Location = new System.Drawing.Point(63, 80);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 23);
+            this.label3.Size = new System.Drawing.Size(122, 30);
             this.label3.TabIndex = 1;
             this.label3.Text = "Username: ";
             // 
@@ -195,10 +195,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(56, 21);
+            this.label1.Location = new System.Drawing.Point(249, 26);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 23);
+            this.label1.Size = new System.Drawing.Size(69, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "Login";
             // 
@@ -208,10 +208,10 @@
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label2.Font = new System.Drawing.Font("Britannic Bold", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(335, 9);
+            this.label2.Location = new System.Drawing.Point(377, 11);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(835, 90);
+            this.label2.Size = new System.Drawing.Size(939, 112);
             this.label2.TabIndex = 1;
             this.label2.Text = "World Wide Sports";
             // 
@@ -256,16 +256,16 @@
             // LoginForm
             // 
             this.AcceptButton = this.loginBtn;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CancelButton = this.exitBtn;
-            this.ClientSize = new System.Drawing.Size(1400, 652);
+            this.ClientSize = new System.Drawing.Size(1575, 815);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login Form";

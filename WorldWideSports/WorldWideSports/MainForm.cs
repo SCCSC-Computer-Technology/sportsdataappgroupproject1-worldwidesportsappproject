@@ -238,7 +238,7 @@ namespace WorldWideSports
             CurrentUserId = userId;
         }
         //this is the dictionary that will be used to replace the team abbreviations with the full team names in the combo box
-        private Dictionary<string, string> nflTeamNames = new Dictionary<string, string>
+        public static Dictionary<string, string> nflTeamNames = new Dictionary<string, string>
         {
             {"ARI", "Arizona Cardinals"},
             {"ATL", "Atlanta Falcons"},
@@ -273,6 +273,51 @@ namespace WorldWideSports
             {"TEN", "Tennessee Titans"},
             {"WAS", "Washington Commanders"}
         };
+        //Dictionary for what teams are in what divisions
+        public static Dictionary<string, (string Division, string Conference)> nflStructure =
+            new Dictionary<string, (string, string)>
+            {
+                // AFC East
+                { "BUF", ("AFC East", "AFC") },
+                { "MIA", ("AFC East", "AFC") },
+                { "NE",  ("AFC East", "AFC") },
+                { "NYJ", ("AFC East", "AFC") },
+                // AFC North
+                { "BAL", ("AFC North", "AFC") },
+                { "CIN", ("AFC North", "AFC") },
+                { "CLE", ("AFC North", "AFC") },
+                { "PIT", ("AFC North", "AFC") },
+                // AFC South
+                { "HOU", ("AFC South", "AFC") },
+                { "IND", ("AFC South", "AFC") },
+                { "JAX", ("AFC South", "AFC") },
+                { "TEN", ("AFC South", "AFC") },
+                // AFC West
+                { "DEN", ("AFC West", "AFC") },
+                { "KC",  ("AFC West", "AFC") },
+                { "LV",  ("AFC West", "AFC") },
+                { "LAC", ("AFC West", "AFC") },
+                // NFC East
+                { "DAL", ("NFC East", "NFC") },
+                { "NYG", ("NFC East", "NFC") },
+                { "PHI", ("NFC East", "NFC") },
+                { "WAS", ("NFC East", "NFC") },
+                // NFC North
+                { "CHI", ("NFC North", "NFC") },
+                { "DET", ("NFC North", "NFC") },
+                { "GB",  ("NFC North", "NFC") },
+                { "MIN", ("NFC North", "NFC") },
+                // NFC South
+                { "ATL", ("NFC South", "NFC") },
+                { "CAR", ("NFC South", "NFC") },
+                { "NO",  ("NFC South", "NFC") },
+                { "TB",  ("NFC South", "NFC") },
+                // NFC West
+                { "ARI", ("NFC West", "NFC") },
+                { "LA", ("NFC West", "NFC") },
+                { "SEA", ("NFC West", "NFC") },
+                { "SF",  ("NFC West", "NFC") }
+            };
 
         private void btnPgaAndNflUpcoming_Click(object sender, EventArgs e)
         {
