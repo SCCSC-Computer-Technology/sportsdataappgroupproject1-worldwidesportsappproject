@@ -126,6 +126,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UpcomingFixtures.resx">
       <DependentUpon>UpcomingFixtures.cs</DependentUpon>
@@ -166,6 +167,70 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\ArizonaLogo.png" />
+    <None Include="Resources\AtlantaLogo.png" />
+    <None Include="Resources\BaltimoreLogo.png" />
+    <None Include="Resources\BuffaloLogo.png" />
+    <None Include="Resources\CarolinaLogo.png" />
+    <None Include="Resources\ChicagoLogo.png" />
+    <None Include="Resources\CincinnatiLogo.png" />
+    <None Include="Resources\ClevelandLogo.png" />
+    <None Include="Resources\DallasLogo.png" />
+    <None Include="Resources\DenverLogo.png" />
+    <None Include="Resources\DetroitLogo.png" />
+    <None Include="Resources\GreenBayLogo.png" />
+    <None Include="Resources\HoustonLogo.png" />
+    <None Include="Resources\IndianapolisLogo.png" />
+    <None Include="Resources\JacksonvilleLogo.png" />
+    <None Include="Resources\KansasCityLogo.png" />
+    <None Include="Resources\LAChargersLogo.png" />
+    <None Include="Resources\LARamsLogo.png" />
+    <None Include="Resources\MiamiLogo.png" />
+    <None Include="Resources\MinnesotaLogo.png" />
+    <None Include="Resources\NewEnglandLogo.png" />
+    <None Include="Resources\NewOrleansLogo.png" />
+    <None Include="Resources\NewYorkGiantsLogo.png" />
+    <None Include="Resources\NewYorkJetsLogo.png" />
+    <None Include="Resources\PhillyLogo.png" />
+    <None Include="Resources\PittsburghLogo.png" />
+    <None Include="Resources\SanFranLogo.png" />
+    <None Include="Resources\SeattleLogo.png" />
+    <None Include="Resources\TampaLogo.png" />
+    <None Include="Resources\TennesseeLogo.png" />
+    <None Include="Resources\VegasLogo.png" />
+    <None Include="Resources\WashingtonLogo.png" />
+    <None Include="Resources\ArizonaText.png" />
+    <None Include="Resources\AtlantaText.png" />
+    <None Include="Resources\BaltimoreText.png" />
+    <None Include="Resources\BuffaloText.png" />
+    <None Include="Resources\CarolinaText.png" />
+    <None Include="Resources\ChicagoText.png" />
+    <None Include="Resources\cincinnatiText.png" />
+    <None Include="Resources\ClevelandText.png" />
+    <None Include="Resources\DallasText.png" />
+    <None Include="Resources\DenverText.png" />
+    <None Include="Resources\DetroitText.png" />
+    <None Include="Resources\GreenBayText.png" />
+    <None Include="Resources\HoustonText.png" />
+    <None Include="Resources\IndianapolisText.png" />
+    <None Include="Resources\JacksonvilleText.png" />
+    <None Include="Resources\KansasCityText.png" />
+    <None Include="Resources\LAChargersText.png" />
+    <None Include="Resources\LARamsText.png" />
+    <None Include="Resources\MiamiText.png" />
+    <None Include="Resources\MinnesotaText.png" />
+    <None Include="Resources\NewEnglandText.png" />
+    <None Include="Resources\NewOrleansText.png" />
+    <None Include="Resources\NewYorkGiantsText.png" />
+    <None Include="Resources\NewYorkJetsText.png" />
+    <None Include="Resources\PhillyText.png" />
+    <None Include="Resources\PittsburghText.png" />
+    <None Include="Resources\SanFranText.png" />
+    <None Include="Resources\SeattleText.png" />
+    <None Include="Resources\TampaText.png" />
+    <None Include="Resources\TennesseeText.png" />
+    <None Include="Resources\VegasText.png" />
+    <None Include="Resources\WashingtonText.png" />
     <Content Include="WorldWideSportsPlayersPlus.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
