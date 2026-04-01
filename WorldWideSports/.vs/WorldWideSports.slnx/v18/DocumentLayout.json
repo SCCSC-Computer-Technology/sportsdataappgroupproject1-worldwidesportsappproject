@@ -1,12 +1,119 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jdort\\OneDrive\\Documents\\GitHub\\sportsdataappgroupproject1-worldwidesportsappproject\\WorldWideSports\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Shawn\\Desktop\\sportsdataappgroupproject1-worldwidesportsappproject\\WorldWideSports\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ECEF9588-1440-43A9-9AB5-821B8C92AF84}|WorldWideSports\\WorldWideSports.csproj|c:\\users\\shawn\\desktop\\sportsdataappgroupproject1-worldwidesportsappproject\\worldwidesports\\worldwidesports\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ECEF9588-1440-43A9-9AB5-821B8C92AF84}|WorldWideSports\\WorldWideSports.csproj|solutionrelative:worldwidesports\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECEF9588-1440-43A9-9AB5-821B8C92AF84}|WorldWideSports\\WorldWideSports.csproj|c:\\users\\shawn\\desktop\\sportsdataappgroupproject1-worldwidesportsappproject\\worldwidesports\\worldwidesports\\nfldetailedform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ECEF9588-1440-43A9-9AB5-821B8C92AF84}|WorldWideSports\\WorldWideSports.csproj|solutionrelative:worldwidesports\\nfldetailedform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECEF9588-1440-43A9-9AB5-821B8C92AF84}|WorldWideSports\\WorldWideSports.csproj|c:\\users\\shawn\\desktop\\sportsdataappgroupproject1-worldwidesportsappproject\\worldwidesports\\worldwidesports\\nflplayers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECEF9588-1440-43A9-9AB5-821B8C92AF84}|WorldWideSports\\WorldWideSports.csproj|solutionrelative:worldwidesports\\nflplayers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECEF9588-1440-43A9-9AB5-821B8C92AF84}|WorldWideSports\\WorldWideSports.csproj|c:\\users\\shawn\\desktop\\sportsdataappgroupproject1-worldwidesportsappproject\\worldwidesports\\worldwidesports\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
+      "RelativeMoniker": "D:0:0:{ECEF9588-1440-43A9-9AB5-821B8C92AF84}|WorldWideSports\\WorldWideSports.csproj|solutionrelative:worldwidesports\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECEF9588-1440-43A9-9AB5-821B8C92AF84}|WorldWideSports\\WorldWideSports.csproj|c:\\users\\shawn\\desktop\\sportsdataappgroupproject1-worldwidesportsappproject\\worldwidesports\\worldwidesports\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECEF9588-1440-43A9-9AB5-821B8C92AF84}|WorldWideSports\\WorldWideSports.csproj|solutionrelative:worldwidesports\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECEF9588-1440-43A9-9AB5-821B8C92AF84}|WorldWideSports\\WorldWideSports.csproj|c:\\users\\shawn\\desktop\\sportsdataappgroupproject1-worldwidesportsappproject\\worldwidesports\\worldwidesports\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECEF9588-1440-43A9-9AB5-821B8C92AF84}|WorldWideSports\\WorldWideSports.csproj|solutionrelative:worldwidesports\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Shawn\\Desktop\\sportsdataappgroupproject1-worldwidesportsappproject\\WorldWideSports\\WorldWideSports\\MainForm.cs",
+              "RelativeDocumentMoniker": "WorldWideSports\\MainForm.cs",
+              "ToolTip": "C:\\Users\\Shawn\\Desktop\\sportsdataappgroupproject1-worldwidesportsappproject\\WorldWideSports\\WorldWideSports\\MainForm.cs [Design]",
+              "RelativeToolTip": "WorldWideSports\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T09:54:55.185Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NFLDetailedForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Shawn\\Desktop\\sportsdataappgroupproject1-worldwidesportsappproject\\WorldWideSports\\WorldWideSports\\NFLDetailedForm.cs",
+              "RelativeDocumentMoniker": "WorldWideSports\\NFLDetailedForm.cs",
+              "ToolTip": "C:\\Users\\Shawn\\Desktop\\sportsdataappgroupproject1-worldwidesportsappproject\\WorldWideSports\\WorldWideSports\\NFLDetailedForm.cs [Design]",
+              "RelativeToolTip": "WorldWideSports\\NFLDetailedForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T09:54:48.159Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NFLPlayers.cs",
+              "DocumentMoniker": "C:\\Users\\Shawn\\Desktop\\sportsdataappgroupproject1-worldwidesportsappproject\\WorldWideSports\\WorldWideSports\\NFLPlayers.cs",
+              "RelativeDocumentMoniker": "WorldWideSports\\NFLPlayers.cs",
+              "ToolTip": "C:\\Users\\Shawn\\Desktop\\sportsdataappgroupproject1-worldwidesportsappproject\\WorldWideSports\\WorldWideSports\\NFLPlayers.cs",
+              "RelativeToolTip": "WorldWideSports\\NFLPlayers.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T09:54:16.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Settings.settings",
+              "DocumentMoniker": "C:\\Users\\Shawn\\Desktop\\sportsdataappgroupproject1-worldwidesportsappproject\\WorldWideSports\\WorldWideSports\\Properties\\Settings.settings",
+              "RelativeDocumentMoniker": "WorldWideSports\\Properties\\Settings.settings",
+              "ToolTip": "C:\\Users\\Shawn\\Desktop\\sportsdataappgroupproject1-worldwidesportsappproject\\WorldWideSports\\WorldWideSports\\Properties\\Settings.settings",
+              "RelativeToolTip": "WorldWideSports\\Properties\\Settings.settings",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
+              "WhenOpened": "2026-04-01T09:51:38.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Shawn\\Desktop\\sportsdataappgroupproject1-worldwidesportsappproject\\WorldWideSports\\WorldWideSports\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "WorldWideSports\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\Shawn\\Desktop\\sportsdataappgroupproject1-worldwidesportsappproject\\WorldWideSports\\WorldWideSports\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "WorldWideSports\\Properties\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T09:51:32.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Shawn\\Desktop\\sportsdataappgroupproject1-worldwidesportsappproject\\WorldWideSports\\WorldWideSports\\Program.cs",
+              "RelativeDocumentMoniker": "WorldWideSports\\Program.cs",
+              "ToolTip": "C:\\Users\\Shawn\\Desktop\\sportsdataappgroupproject1-worldwidesportsappproject\\WorldWideSports\\WorldWideSports\\Program.cs",
+              "RelativeToolTip": "WorldWideSports\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T09:50:19.715Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
