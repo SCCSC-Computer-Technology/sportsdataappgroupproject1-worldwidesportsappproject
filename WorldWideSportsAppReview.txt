@@ -1,0 +1,12 @@
+Q1 - Is the code generally readable and well-documented?
+A1 – Yes, the code is readable and easy to go with. There are some comments that help, and the classes are laid out good as well. Could use a little more commenting but overall it made sense.
+
+Q2 – Did you find any software defects?
+A2- I did not see any major defects. Just small things maybe, like using strings for numbers and GamesStarted being set twice. Nothing serious but not sure maybe they needed the string for numbers for a reason.
+
+Q3 - What was one way that their solution differed from yours?
+A3 – They did different sports and used databases for the information and data and my group used 
+(just went back and looked and my group did the samething) honestly not much different other than the design of the app.
+
+Q4 – Do you have any other constructive comments for the author?
+A4 – Just clean up small things like maybe formatting. Other than that, it looked solid.
