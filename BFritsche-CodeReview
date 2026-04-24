@@ -1,0 +1,17 @@
+Is the code generally readable and
+well-documented?
+Yes, the code is well organized in blocks and features
+comments explaining what each block does.
+
+Did you find any software defects?
+It runs well for the most part, but when trying to view stats the program crashed,
+although this may be because I don't have the database.
+
+What was one way that their solution
+differed from yours?
+This project uses a lot of classes in it for teams and dates, where my group's
+doesn't feature that many.
+
+Do you have any other constructive
+comments for the author?
+No, good job on this!
